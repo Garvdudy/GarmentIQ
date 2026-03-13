@@ -1,0 +1,15 @@
+category_id,gender,type,sub_type,full_label
+1,Womens,Formals,Pants,Womens > Formals > Pants
+2,Womens,Formals,Shirts,Womens > Formals > Shirts
+3,Womens,Formals,Office Wear One Piece,Womens > Formals > Office Wear One Piece
+4,Womens,Casuals,Top,Womens > Casuals > Top
+5,Uni-Sex,Casual,Jacket (Denim),Uni-Sex > Jacket (Denim)
+6,Uni-Sex,Casual,Jeans,Uni-Sex > Jeans
+7,Uni-Sex,Streetwear,Hoodies,Uni-Sex > Streetwear > Hoodies
+8,Uni-Sex,Streetwear,Joggers,Uni-Sex > Streetwear > Joggers
+9,Uni-Sex,Streetwear,T-Shirts,Uni-Sex > Streetwear > T-Shirts
+10,Uni-Sex,Streetwear,Sweatshirts,Uni-Sex > Streetwear > Sweatshirts
+11,Uni-Sex,Streetwear,Full-Sleeve T-Shirts,Uni-Sex > Streetwear > Full-Sleeve T-Shirts
+12,Mens,Formals,Pants,Mens > Formals > Pants
+13,Mens,Formals,Shirts,Mens > Formals > Shirts
+14,Mens,Formals,Office Jacket,Mens > Formals > Office Jacket

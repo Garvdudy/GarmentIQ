@@ -1,0 +1,1001 @@
+log_id,product_id,user_id,change_type,quantity_change,stock_before,stock_after,reason,changed_at
+1,514,18,SALE,64,278,342,Online sale processed,2023-11-01 00:00:00
+2,52,7,RESTOCK,8,172,180,Manual stock correction,2023-12-28 00:00:00
+3,274,14,RESTOCK,43,98,141,Online sale processed,2024-04-21 00:00:00
+4,114,9,RESTOCK,45,47,92,Manual stock correction,2023-12-27 00:00:00
+5,195,19,SALE,74,182,256,Seasonal inventory adjustment,2023-07-28 00:00:00
+6,151,9,ADJUSTMENT,-6,257,251,Factory delivery confirmed,2024-02-05 00:00:00
+7,26,4,ADJUSTMENT,24,105,129,Damaged goods removed,2023-10-06 00:00:00
+8,15,16,RESTOCK,75,254,329,Customer return approved,2023-07-23 00:00:00
+9,587,1,SALE,95,100,195,Promotional restock,2024-07-19 00:00:00
+10,262,16,SALE,-1,210,209,Seasonal inventory adjustment,2024-06-26 00:00:00
+11,234,15,RETURN,75,54,129,Online sale processed,2023-10-25 00:00:00
+12,49,20,PRODUCTION,95,185,280,Production batch received,2023-09-08 00:00:00
+13,357,6,SALE,-10,200,190,Online sale processed,2024-12-16 00:00:00
+14,384,2,RESTOCK,81,162,243,Manual stock correction,2024-11-04 00:00:00
+15,247,3,SALE,29,243,272,Manual stock correction,2024-05-07 00:00:00
+16,153,2,RESTOCK,9,49,58,Promotional restock,2024-01-04 00:00:00
+17,124,5,ADJUSTMENT,-3,22,19,Manual stock correction,2023-10-10 00:00:00
+18,455,20,SALE,76,194,270,Factory delivery confirmed,2024-07-08 00:00:00
+19,196,8,ADJUSTMENT,-2,250,248,Customer return approved,2023-09-12 00:00:00
+20,251,15,RESTOCK,84,44,128,Production batch received,2024-09-25 00:00:00
+21,604,3,SALE,-8,191,183,Customer return approved,2024-01-02 00:00:00
+22,465,8,SALE,-6,158,152,Seasonal inventory adjustment,2023-07-14 00:00:00
+23,182,2,RESTOCK,65,40,105,Manual stock correction,2024-07-11 00:00:00
+24,278,13,SALE,-3,99,96,Seasonal inventory adjustment,2024-01-20 00:00:00
+25,425,3,ADJUSTMENT,-4,183,179,Online sale processed,2024-05-19 00:00:00
+26,344,8,SALE,-2,22,20,Online sale processed,2024-02-01 00:00:00
+27,552,3,ADJUSTMENT,-5,111,106,Manual stock correction,2024-11-15 00:00:00
+28,575,8,RETURN,49,135,184,Customer return approved,2023-09-28 00:00:00
+29,394,10,ADJUSTMENT,-10,70,60,Promotional restock,2023-12-21 00:00:00
+30,136,2,RESTOCK,51,184,235,Customer return approved,2024-06-07 00:00:00
+31,200,12,PRODUCTION,18,251,269,Manual stock correction,2023-06-28 00:00:00
+32,32,8,SALE,-2,235,233,Seasonal inventory adjustment,2023-11-01 00:00:00
+33,443,6,RESTOCK,38,57,95,Production batch received,2024-12-15 00:00:00
+34,493,14,RESTOCK,91,288,379,Manual stock correction,2024-05-12 00:00:00
+35,158,20,PRODUCTION,63,38,101,Customer return approved,2023-12-21 00:00:00
+36,450,2,RESTOCK,60,293,353,Customer return approved,2024-10-14 00:00:00
+37,393,11,RESTOCK,37,296,333,Factory delivery confirmed,2023-08-15 00:00:00
+38,190,5,RESTOCK,14,192,206,Damaged goods removed,2024-11-25 00:00:00
+39,131,6,SALE,-7,190,183,Damaged goods removed,2024-04-10 00:00:00
+40,230,20,SALE,73,129,202,Factory delivery confirmed,2023-10-27 00:00:00
+41,76,14,RESTOCK,61,333,394,Promotional restock,2023-10-11 00:00:00
+42,602,2,SALE,-1,115,114,Customer return approved,2024-06-27 00:00:00
+43,586,7,RESTOCK,16,329,345,Production batch received,2024-01-24 00:00:00
+44,166,11,RESTOCK,82,60,142,Damaged goods removed,2023-09-10 00:00:00
+45,186,1,SALE,-10,157,147,Online sale processed,2024-03-06 00:00:00
+46,83,13,PRODUCTION,62,101,163,Customer return approved,2024-03-07 00:00:00
+47,606,5,SALE,19,83,102,Manual stock correction,2023-08-04 00:00:00
+48,544,5,SALE,-2,204,202,Promotional restock,2024-06-05 00:00:00
+49,506,6,SALE,-10,14,4,Factory delivery confirmed,2024-09-21 00:00:00
+50,532,15,RESTOCK,87,143,230,Manual stock correction,2024-05-22 00:00:00
+51,92,8,RESTOCK,63,230,293,Damaged goods removed,2023-12-03 00:00:00
+52,471,4,PRODUCTION,13,142,155,Factory delivery confirmed,2023-11-06 00:00:00
+53,610,15,RESTOCK,28,260,288,Production batch received,2024-04-24 00:00:00
+54,312,19,SALE,7,101,108,Promotional restock,2023-11-15 00:00:00
+55,45,1,ADJUSTMENT,-8,294,286,Promotional restock,2024-05-23 00:00:00
+56,529,16,RESTOCK,95,251,346,Factory delivery confirmed,2023-07-14 00:00:00
+57,254,7,PRODUCTION,78,126,204,Online sale processed,2023-06-03 00:00:00
+58,34,9,ADJUSTMENT,16,144,160,Manual stock correction,2024-05-31 00:00:00
+59,206,2,SALE,-5,108,103,Damaged goods removed,2024-12-11 00:00:00
+60,337,17,RETURN,55,147,202,Customer return approved,2023-11-08 00:00:00
+61,187,6,SALE,-2,105,103,Customer return approved,2024-11-20 00:00:00
+62,295,19,RETURN,46,278,324,Factory delivery confirmed,2024-12-15 00:00:00
+63,96,3,SALE,-8,133,125,Seasonal inventory adjustment,2024-04-21 00:00:00
+64,439,15,RESTOCK,46,161,207,Manual stock correction,2023-06-03 00:00:00
+65,280,4,SALE,62,179,241,Factory delivery confirmed,2024-07-10 00:00:00
+66,385,2,RETURN,52,38,90,Damaged goods removed,2024-05-08 00:00:00
+67,96,15,RESTOCK,90,202,292,Online sale processed,2023-09-01 00:00:00
+68,139,10,SALE,-6,238,232,Production batch received,2024-08-24 00:00:00
+69,67,18,SALE,-1,114,113,Damaged goods removed,2023-10-24 00:00:00
+70,211,5,ADJUSTMENT,-3,285,282,Factory delivery confirmed,2024-12-29 00:00:00
+71,33,18,RESTOCK,87,280,367,Factory delivery confirmed,2024-12-18 00:00:00
+72,257,19,ADJUSTMENT,-5,141,136,Production batch received,2023-12-23 00:00:00
+73,90,4,RESTOCK,72,46,118,Seasonal inventory adjustment,2024-10-22 00:00:00
+74,509,14,RESTOCK,91,281,372,Online sale processed,2024-07-01 00:00:00
+75,45,6,SALE,-5,238,233,Factory delivery confirmed,2024-12-26 00:00:00
+76,190,15,RESTOCK,47,129,176,Damaged goods removed,2024-03-30 00:00:00
+77,408,18,SALE,-1,372,371,Online sale processed,2023-08-14 00:00:00
+78,321,14,RESTOCK,54,156,210,Damaged goods removed,2023-12-20 00:00:00
+79,220,3,PRODUCTION,75,142,217,Production batch received,2023-06-16 00:00:00
+80,261,19,RETURN,39,145,184,Promotional restock,2024-01-27 00:00:00
+81,223,14,PRODUCTION,97,120,217,Production batch received,2024-02-26 00:00:00
+82,291,8,PRODUCTION,76,143,219,Damaged goods removed,2024-02-03 00:00:00
+83,270,2,PRODUCTION,36,184,220,Promotional restock,2023-12-17 00:00:00
+84,449,11,RESTOCK,88,105,193,Promotional restock,2024-10-09 00:00:00
+85,330,13,SALE,100,47,147,Damaged goods removed,2023-07-20 00:00:00
+86,336,4,SALE,-3,200,197,Online sale processed,2024-03-28 00:00:00
+87,548,12,PRODUCTION,20,19,39,Manual stock correction,2024-08-14 00:00:00
+88,435,2,RETURN,93,95,188,Damaged goods removed,2024-10-05 00:00:00
+89,137,12,SALE,-10,96,86,Damaged goods removed,2024-12-25 00:00:00
+90,92,19,SALE,-3,280,277,Factory delivery confirmed,2023-11-10 00:00:00
+91,108,20,PRODUCTION,5,267,272,Promotional restock,2023-09-08 00:00:00
+92,559,17,SALE,-7,210,203,Damaged goods removed,2024-09-16 00:00:00
+93,373,12,SALE,-9,223,214,Online sale processed,2023-07-22 00:00:00
+94,600,19,RESTOCK,50,67,117,Factory delivery confirmed,2023-06-28 00:00:00
+95,485,9,ADJUSTMENT,-8,202,194,Damaged goods removed,2024-07-07 00:00:00
+96,289,5,SALE,-1,4,3,Damaged goods removed,2024-11-06 00:00:00
+97,418,3,SALE,-7,214,207,Manual stock correction,2024-08-12 00:00:00
+98,458,3,RETURN,86,53,139,Factory delivery confirmed,2023-09-10 00:00:00
+99,52,18,RESTOCK,78,77,155,Production batch received,2024-06-03 00:00:00
+100,299,1,SALE,-6,282,276,Manual stock correction,2024-04-24 00:00:00
+101,71,9,ADJUSTMENT,14,41,55,Manual stock correction,2023-10-28 00:00:00
+102,576,4,RETURN,43,137,180,Damaged goods removed,2024-04-28 00:00:00
+103,305,5,RESTOCK,45,123,168,Factory delivery confirmed,2023-09-18 00:00:00
+104,563,13,ADJUSTMENT,41,155,196,Factory delivery confirmed,2024-02-05 00:00:00
+105,273,16,SALE,-1,27,26,Customer return approved,2024-03-27 00:00:00
+106,174,10,RETURN,70,167,237,Damaged goods removed,2024-09-06 00:00:00
+107,200,16,ADJUSTMENT,-8,90,82,Online sale processed,2024-03-22 00:00:00
+108,117,3,RESTOCK,68,296,364,Factory delivery confirmed,2024-07-11 00:00:00
+109,156,16,SALE,-6,147,141,Factory delivery confirmed,2023-11-04 00:00:00
+110,47,14,PRODUCTION,32,255,287,Factory delivery confirmed,2024-11-15 00:00:00
+111,146,1,RESTOCK,64,226,290,Customer return approved,2024-05-26 00:00:00
+112,319,7,RESTOCK,30,202,232,Seasonal inventory adjustment,2024-09-22 00:00:00
+113,530,2,RESTOCK,91,122,213,Seasonal inventory adjustment,2024-09-10 00:00:00
+114,538,11,SALE,-5,122,117,Manual stock correction,2024-07-07 00:00:00
+115,209,13,SALE,-5,279,274,Damaged goods removed,2024-10-11 00:00:00
+116,398,13,SALE,-6,101,95,Manual stock correction,2024-12-04 00:00:00
+117,407,3,PRODUCTION,20,227,247,Factory delivery confirmed,2023-06-20 00:00:00
+118,426,16,RETURN,42,233,275,Manual stock correction,2024-07-16 00:00:00
+119,148,9,RETURN,99,84,183,Factory delivery confirmed,2024-05-04 00:00:00
+120,106,4,SALE,34,26,60,Online sale processed,2023-12-04 00:00:00
+121,285,10,PRODUCTION,27,92,119,Customer return approved,2023-11-17 00:00:00
+122,521,13,ADJUSTMENT,-2,224,222,Manual stock correction,2024-10-17 00:00:00
+123,609,9,ADJUSTMENT,20,58,78,Customer return approved,2024-04-27 00:00:00
+124,503,2,RESTOCK,89,222,311,Factory delivery confirmed,2023-07-01 00:00:00
+125,308,15,RESTOCK,100,35,135,Promotional restock,2024-01-05 00:00:00
+126,198,16,RESTOCK,37,144,181,Seasonal inventory adjustment,2023-11-24 00:00:00
+127,368,8,RESTOCK,16,249,265,Factory delivery confirmed,2023-06-20 00:00:00
+128,257,9,SALE,-10,80,70,Online sale processed,2024-07-19 00:00:00
+129,530,2,SALE,-8,27,19,Production batch received,2024-04-06 00:00:00
+130,503,7,SALE,-9,9,0,Online sale processed,2024-08-11 00:00:00
+131,254,14,RETURN,87,258,345,Production batch received,2023-11-16 00:00:00
+132,39,15,SALE,-10,84,74,Production batch received,2024-08-25 00:00:00
+133,589,12,RETURN,23,71,94,Damaged goods removed,2024-03-04 00:00:00
+134,354,5,SALE,-9,76,67,Manual stock correction,2024-08-05 00:00:00
+135,117,5,RESTOCK,40,91,131,Online sale processed,2023-10-10 00:00:00
+136,58,18,ADJUSTMENT,-7,118,111,Production batch received,2024-05-03 00:00:00
+137,54,16,SALE,-6,260,254,Online sale processed,2024-07-17 00:00:00
+138,536,9,RESTOCK,64,168,232,Damaged goods removed,2023-11-10 00:00:00
+139,607,16,PRODUCTION,8,20,28,Manual stock correction,2024-02-29 00:00:00
+140,376,3,ADJUSTMENT,48,275,323,Customer return approved,2023-06-23 00:00:00
+141,602,18,RESTOCK,31,274,305,Manual stock correction,2024-01-03 00:00:00
+142,599,9,ADJUSTMENT,-3,277,274,Production batch received,2024-07-03 00:00:00
+143,318,14,SALE,-2,147,145,Promotional restock,2023-11-13 00:00:00
+144,17,5,SALE,12,239,251,Manual stock correction,2024-07-06 00:00:00
+145,401,2,ADJUSTMENT,18,190,208,Damaged goods removed,2023-10-11 00:00:00
+146,350,13,PRODUCTION,70,203,273,Production batch received,2024-01-23 00:00:00
+147,250,3,RESTOCK,97,108,205,Factory delivery confirmed,2023-07-07 00:00:00
+148,601,7,PRODUCTION,64,79,143,Seasonal inventory adjustment,2023-11-16 00:00:00
+149,604,6,RETURN,48,140,188,Customer return approved,2024-05-16 00:00:00
+150,44,3,ADJUSTMENT,92,25,117,Customer return approved,2024-07-21 00:00:00
+151,314,6,RESTOCK,90,278,368,Seasonal inventory adjustment,2024-11-20 00:00:00
+152,338,17,RESTOCK,93,166,259,Seasonal inventory adjustment,2023-10-10 00:00:00
+153,406,3,RESTOCK,28,299,327,Manual stock correction,2023-07-27 00:00:00
+154,69,17,SALE,25,73,98,Online sale processed,2024-12-24 00:00:00
+155,209,1,SALE,-8,89,81,Customer return approved,2024-01-01 00:00:00
+156,178,7,ADJUSTMENT,-9,172,163,Promotional restock,2024-11-02 00:00:00
+157,375,4,SALE,59,193,252,Manual stock correction,2024-12-02 00:00:00
+158,138,3,RESTOCK,97,213,310,Customer return approved,2024-01-19 00:00:00
+159,313,19,SALE,-7,29,22,Promotional restock,2024-12-17 00:00:00
+160,182,4,SALE,-7,111,104,Online sale processed,2023-10-04 00:00:00
+161,240,20,RESTOCK,5,55,60,Production batch received,2024-03-25 00:00:00
+162,5,19,PRODUCTION,17,51,68,Damaged goods removed,2024-04-01 00:00:00
+163,387,12,SALE,86,55,141,Damaged goods removed,2024-12-16 00:00:00
+164,304,20,RETURN,100,54,154,Production batch received,2024-04-18 00:00:00
+165,567,15,RESTOCK,96,107,203,Online sale processed,2023-11-22 00:00:00
+166,219,20,RESTOCK,53,181,234,Seasonal inventory adjustment,2024-03-13 00:00:00
+167,219,9,RESTOCK,56,60,116,Production batch received,2024-09-30 00:00:00
+168,416,19,SALE,-2,9,7,Damaged goods removed,2024-02-28 00:00:00
+169,131,19,RETURN,63,34,97,Seasonal inventory adjustment,2024-12-01 00:00:00
+170,283,6,SALE,-1,143,142,Online sale processed,2023-09-28 00:00:00
+171,498,4,RESTOCK,7,99,106,Manual stock correction,2024-03-27 00:00:00
+172,429,19,RESTOCK,5,179,184,Promotional restock,2024-09-21 00:00:00
+173,341,10,SALE,80,131,211,Damaged goods removed,2023-10-30 00:00:00
+174,397,2,SALE,-4,33,29,Seasonal inventory adjustment,2024-05-27 00:00:00
+175,135,11,PRODUCTION,80,279,359,Customer return approved,2023-11-16 00:00:00
+176,541,9,RETURN,34,288,322,Online sale processed,2023-06-04 00:00:00
+177,575,11,SALE,54,116,170,Factory delivery confirmed,2024-04-29 00:00:00
+178,572,7,SALE,-2,162,160,Seasonal inventory adjustment,2024-08-12 00:00:00
+179,606,2,SALE,-2,310,308,Online sale processed,2024-06-12 00:00:00
+180,407,4,PRODUCTION,72,256,328,Damaged goods removed,2023-07-17 00:00:00
+181,7,7,SALE,70,117,187,Promotional restock,2024-02-05 00:00:00
+182,395,3,ADJUSTMENT,-2,21,19,Production batch received,2024-07-05 00:00:00
+183,314,15,RESTOCK,90,147,237,Manual stock correction,2023-12-10 00:00:00
+184,87,16,ADJUSTMENT,-4,202,198,Manual stock correction,2024-07-14 00:00:00
+185,553,5,RESTOCK,61,111,172,Customer return approved,2024-07-25 00:00:00
+186,233,6,RESTOCK,5,24,29,Factory delivery confirmed,2024-02-26 00:00:00
+187,426,2,ADJUSTMENT,-7,288,281,Production batch received,2023-10-28 00:00:00
+188,332,7,RESTOCK,53,251,304,Factory delivery confirmed,2024-06-07 00:00:00
+189,245,17,SALE,-1,54,53,Customer return approved,2023-12-24 00:00:00
+190,107,20,ADJUSTMENT,-1,295,294,Seasonal inventory adjustment,2024-10-19 00:00:00
+191,363,15,ADJUSTMENT,-8,148,140,Customer return approved,2024-11-11 00:00:00
+192,554,19,SALE,-9,40,31,Customer return approved,2023-06-11 00:00:00
+193,531,12,ADJUSTMENT,-10,252,242,Online sale processed,2024-09-08 00:00:00
+194,263,6,RETURN,42,109,151,Factory delivery confirmed,2023-06-13 00:00:00
+195,101,9,SALE,64,184,248,Production batch received,2024-10-08 00:00:00
+196,341,5,RESTOCK,32,66,98,Seasonal inventory adjustment,2024-08-06 00:00:00
+197,570,18,RETURN,61,103,164,Promotional restock,2023-08-16 00:00:00
+198,616,9,ADJUSTMENT,80,172,252,Online sale processed,2024-07-11 00:00:00
+199,380,20,SALE,-2,19,17,Production batch received,2023-10-03 00:00:00
+200,325,18,SALE,-10,230,220,Damaged goods removed,2024-07-01 00:00:00
+201,58,20,PRODUCTION,73,112,185,Seasonal inventory adjustment,2024-06-30 00:00:00
+202,342,4,SALE,-7,249,242,Seasonal inventory adjustment,2023-08-29 00:00:00
+203,171,4,SALE,42,298,340,Seasonal inventory adjustment,2024-05-28 00:00:00
+204,232,7,RESTOCK,17,201,218,Manual stock correction,2023-09-21 00:00:00
+205,171,16,ADJUSTMENT,-4,220,216,Manual stock correction,2024-10-01 00:00:00
+206,381,3,SALE,-3,137,134,Promotional restock,2024-08-21 00:00:00
+207,11,20,SALE,50,292,342,Factory delivery confirmed,2024-07-21 00:00:00
+208,593,7,RESTOCK,88,103,191,Seasonal inventory adjustment,2023-07-10 00:00:00
+209,119,6,RESTOCK,17,129,146,Customer return approved,2024-08-29 00:00:00
+210,529,3,ADJUSTMENT,-1,180,179,Customer return approved,2024-10-26 00:00:00
+211,474,16,SALE,-4,91,87,Damaged goods removed,2024-12-09 00:00:00
+212,558,18,RETURN,79,263,342,Damaged goods removed,2024-07-17 00:00:00
+213,502,18,PRODUCTION,73,167,240,Manual stock correction,2023-07-24 00:00:00
+214,248,8,ADJUSTMENT,-6,229,223,Customer return approved,2024-09-06 00:00:00
+215,580,6,SALE,-4,168,164,Manual stock correction,2023-10-26 00:00:00
+216,560,15,SALE,-5,267,262,Promotional restock,2024-12-15 00:00:00
+217,182,5,SALE,87,137,224,Factory delivery confirmed,2024-08-23 00:00:00
+218,444,1,SALE,36,229,265,Factory delivery confirmed,2023-07-12 00:00:00
+219,178,15,RETURN,99,7,106,Factory delivery confirmed,2023-10-08 00:00:00
+220,84,18,SALE,-8,128,120,Promotional restock,2023-10-04 00:00:00
+221,512,8,RESTOCK,40,61,101,Online sale processed,2024-03-29 00:00:00
+222,602,6,SALE,99,340,439,Online sale processed,2024-04-22 00:00:00
+223,86,7,RESTOCK,34,31,65,Online sale processed,2023-06-21 00:00:00
+224,389,4,SALE,-8,237,229,Manual stock correction,2024-08-16 00:00:00
+225,581,2,RETURN,79,65,144,Damaged goods removed,2023-06-23 00:00:00
+226,513,8,SALE,-7,60,53,Seasonal inventory adjustment,2023-06-17 00:00:00
+227,43,17,ADJUSTMENT,49,206,255,Online sale processed,2024-07-23 00:00:00
+228,72,13,RESTOCK,66,300,366,Manual stock correction,2023-07-20 00:00:00
+229,245,15,RETURN,23,184,207,Damaged goods removed,2024-08-16 00:00:00
+230,65,11,SALE,-5,187,182,Production batch received,2024-07-19 00:00:00
+231,435,4,RESTOCK,82,265,347,Seasonal inventory adjustment,2024-04-28 00:00:00
+232,61,12,SALE,-1,185,184,Damaged goods removed,2024-06-19 00:00:00
+233,488,15,RESTOCK,81,254,335,Promotional restock,2023-09-28 00:00:00
+234,108,8,RESTOCK,17,160,177,Customer return approved,2024-04-16 00:00:00
+235,28,12,RESTOCK,45,16,61,Seasonal inventory adjustment,2024-02-16 00:00:00
+236,140,1,RESTOCK,60,229,289,Promotional restock,2023-10-22 00:00:00
+237,173,12,RETURN,54,264,318,Promotional restock,2024-02-16 00:00:00
+238,80,1,RETURN,43,318,361,Manual stock correction,2023-10-12 00:00:00
+239,223,2,SALE,-5,324,319,Manual stock correction,2023-06-27 00:00:00
+240,21,20,SALE,-10,193,183,Customer return approved,2023-12-31 00:00:00
+241,76,17,PRODUCTION,26,346,372,Factory delivery confirmed,2024-06-30 00:00:00
+242,54,8,SALE,33,255,288,Customer return approved,2023-09-30 00:00:00
+243,304,20,RETURN,55,119,174,Factory delivery confirmed,2023-11-23 00:00:00
+244,131,11,ADJUSTMENT,-6,6,0,Factory delivery confirmed,2023-12-22 00:00:00
+245,422,1,RETURN,24,285,309,Online sale processed,2024-05-29 00:00:00
+246,608,2,RESTOCK,35,108,143,Promotional restock,2024-06-28 00:00:00
+247,464,9,RETURN,51,125,176,Production batch received,2024-08-02 00:00:00
+248,345,20,RESTOCK,18,203,221,Production batch received,2023-12-05 00:00:00
+249,106,17,ADJUSTMENT,96,35,131,Manual stock correction,2024-08-18 00:00:00
+250,529,3,RESTOCK,82,165,247,Manual stock correction,2024-01-02 00:00:00
+251,49,8,RESTOCK,92,199,291,Manual stock correction,2023-06-26 00:00:00
+252,199,15,RESTOCK,74,182,256,Promotional restock,2024-09-28 00:00:00
+253,152,15,RESTOCK,32,266,298,Manual stock correction,2024-10-28 00:00:00
+254,410,3,SALE,99,265,364,Production batch received,2023-08-20 00:00:00
+255,334,6,RESTOCK,63,6,69,Customer return approved,2024-04-20 00:00:00
+256,542,4,RESTOCK,24,234,258,Manual stock correction,2023-11-27 00:00:00
+257,161,18,SALE,-9,56,47,Manual stock correction,2024-02-17 00:00:00
+258,180,7,RETURN,85,140,225,Manual stock correction,2023-08-31 00:00:00
+259,546,1,RESTOCK,31,38,69,Factory delivery confirmed,2023-07-13 00:00:00
+260,484,1,RESTOCK,84,217,301,Seasonal inventory adjustment,2023-08-06 00:00:00
+261,211,20,ADJUSTMENT,85,201,286,Damaged goods removed,2024-02-14 00:00:00
+262,348,17,SALE,-8,128,120,Online sale processed,2024-05-14 00:00:00
+263,549,15,RESTOCK,27,291,318,Manual stock correction,2024-09-02 00:00:00
+264,415,16,ADJUSTMENT,60,295,355,Promotional restock,2023-12-03 00:00:00
+265,233,2,RETURN,46,205,251,Promotional restock,2023-12-21 00:00:00
+266,110,7,RETURN,86,180,266,Seasonal inventory adjustment,2023-11-20 00:00:00
+267,238,2,SALE,52,57,109,Damaged goods removed,2023-09-02 00:00:00
+268,434,20,SALE,10,206,216,Manual stock correction,2024-12-20 00:00:00
+269,505,2,RETURN,10,304,314,Promotional restock,2024-01-13 00:00:00
+270,387,2,SALE,82,53,135,Online sale processed,2023-06-14 00:00:00
+271,64,7,SALE,-6,60,54,Customer return approved,2024-03-18 00:00:00
+272,498,19,RETURN,29,231,260,Manual stock correction,2023-12-06 00:00:00
+273,378,6,RESTOCK,6,53,59,Online sale processed,2023-12-22 00:00:00
+274,67,20,SALE,24,289,313,Online sale processed,2024-06-08 00:00:00
+275,200,14,ADJUSTMENT,-5,136,131,Promotional restock,2024-04-24 00:00:00
+276,93,17,RESTOCK,26,84,110,Damaged goods removed,2024-06-03 00:00:00
+277,128,19,SALE,-2,299,297,Online sale processed,2023-06-07 00:00:00
+278,286,5,RETURN,78,258,336,Customer return approved,2024-04-16 00:00:00
+279,459,4,ADJUSTMENT,12,86,98,Seasonal inventory adjustment,2024-07-04 00:00:00
+280,93,7,ADJUSTMENT,19,190,209,Factory delivery confirmed,2023-10-24 00:00:00
+281,140,17,SALE,-10,196,186,Online sale processed,2024-05-25 00:00:00
+282,128,13,RESTOCK,46,203,249,Production batch received,2024-02-19 00:00:00
+283,433,9,RESTOCK,36,207,243,Factory delivery confirmed,2024-02-17 00:00:00
+284,411,4,RESTOCK,34,272,306,Online sale processed,2024-07-25 00:00:00
+285,291,11,PRODUCTION,8,44,52,Seasonal inventory adjustment,2023-11-06 00:00:00
+286,502,15,SALE,85,243,328,Manual stock correction,2023-09-29 00:00:00
+287,385,13,ADJUSTMENT,96,248,344,Seasonal inventory adjustment,2023-06-23 00:00:00
+288,253,5,RESTOCK,53,171,224,Seasonal inventory adjustment,2023-06-02 00:00:00
+289,116,9,SALE,87,106,193,Promotional restock,2023-12-10 00:00:00
+290,442,13,ADJUSTMENT,-7,311,304,Customer return approved,2024-12-14 00:00:00
+291,140,5,SALE,-5,299,294,Production batch received,2024-09-03 00:00:00
+292,189,4,SALE,-8,207,199,Manual stock correction,2024-10-02 00:00:00
+293,107,14,RESTOCK,13,272,285,Promotional restock,2024-12-22 00:00:00
+294,540,4,RESTOCK,92,134,226,Promotional restock,2023-09-20 00:00:00
+295,123,14,RESTOCK,21,160,181,Manual stock correction,2023-09-15 00:00:00
+296,564,14,SALE,-9,221,212,Customer return approved,2024-09-27 00:00:00
+297,460,13,RESTOCK,49,163,212,Seasonal inventory adjustment,2024-11-09 00:00:00
+298,490,3,SALE,-4,318,314,Seasonal inventory adjustment,2023-12-20 00:00:00
+299,136,16,PRODUCTION,43,113,156,Production batch received,2024-04-19 00:00:00
+300,114,17,SALE,-6,135,129,Customer return approved,2024-03-26 00:00:00
+301,9,4,RESTOCK,60,270,330,Promotional restock,2024-11-27 00:00:00
+302,365,7,RETURN,15,97,112,Customer return approved,2024-08-17 00:00:00
+303,247,7,RESTOCK,17,366,383,Manual stock correction,2023-08-20 00:00:00
+304,496,4,RETURN,91,361,452,Factory delivery confirmed,2024-10-11 00:00:00
+305,34,20,SALE,64,126,190,Promotional restock,2024-05-29 00:00:00
+306,449,17,RETURN,8,235,243,Promotional restock,2024-02-18 00:00:00
+307,247,19,SALE,-4,241,237,Manual stock correction,2024-03-01 00:00:00
+308,56,16,SALE,-6,344,338,Customer return approved,2024-10-04 00:00:00
+309,343,9,RESTOCK,74,58,132,Damaged goods removed,2024-11-27 00:00:00
+310,374,9,PRODUCTION,52,151,203,Online sale processed,2023-07-14 00:00:00
+311,202,1,ADJUSTMENT,-9,97,88,Production batch received,2024-04-27 00:00:00
+312,146,14,RESTOCK,33,210,243,Damaged goods removed,2024-10-05 00:00:00
+313,155,4,ADJUSTMENT,-8,217,209,Factory delivery confirmed,2023-10-14 00:00:00
+314,236,10,RETURN,28,87,115,Customer return approved,2023-10-05 00:00:00
+315,418,20,RESTOCK,12,13,25,Seasonal inventory adjustment,2024-11-03 00:00:00
+316,520,17,ADJUSTMENT,-1,288,287,Seasonal inventory adjustment,2024-05-23 00:00:00
+317,38,1,PRODUCTION,23,252,275,Damaged goods removed,2024-02-20 00:00:00
+318,375,13,ADJUSTMENT,-1,154,153,Customer return approved,2023-11-24 00:00:00
+319,148,13,SALE,-1,314,313,Seasonal inventory adjustment,2023-12-03 00:00:00
+320,158,1,ADJUSTMENT,54,203,257,Production batch received,2024-01-09 00:00:00
+321,272,5,SALE,-3,141,138,Production batch received,2024-11-03 00:00:00
+322,272,11,SALE,-5,213,208,Promotional restock,2024-04-22 00:00:00
+323,48,16,RESTOCK,6,248,254,Seasonal inventory adjustment,2023-10-04 00:00:00
+324,184,19,PRODUCTION,84,266,350,Production batch received,2023-06-12 00:00:00
+325,339,6,SALE,-5,265,260,Promotional restock,2024-02-06 00:00:00
+326,411,10,PRODUCTION,64,52,116,Factory delivery confirmed,2024-09-15 00:00:00
+327,308,20,PRODUCTION,94,118,212,Factory delivery confirmed,2023-10-22 00:00:00
+328,245,16,SALE,70,155,225,Promotional restock,2023-10-29 00:00:00
+329,325,17,SALE,-1,113,112,Manual stock correction,2024-06-10 00:00:00
+330,296,18,ADJUSTMENT,-3,283,280,Seasonal inventory adjustment,2023-06-01 00:00:00
+331,384,15,ADJUSTMENT,-5,323,318,Online sale processed,2023-06-14 00:00:00
+332,399,4,ADJUSTMENT,-5,150,145,Promotional restock,2024-08-05 00:00:00
+333,56,12,SALE,-1,26,25,Online sale processed,2023-09-02 00:00:00
+334,272,4,SALE,-8,226,218,Seasonal inventory adjustment,2024-08-30 00:00:00
+335,401,14,ADJUSTMENT,71,179,250,Manual stock correction,2024-01-17 00:00:00
+336,3,6,PRODUCTION,79,439,518,Factory delivery confirmed,2024-07-19 00:00:00
+337,444,16,RETURN,35,285,320,Promotional restock,2024-01-30 00:00:00
+338,293,14,RESTOCK,89,33,122,Manual stock correction,2024-03-31 00:00:00
+339,594,12,ADJUSTMENT,84,26,110,Promotional restock,2024-12-16 00:00:00
+340,506,9,RESTOCK,56,338,394,Online sale processed,2024-07-12 00:00:00
+341,562,16,SALE,-3,184,181,Customer return approved,2024-09-07 00:00:00
+342,506,10,PRODUCTION,15,199,214,Seasonal inventory adjustment,2023-12-06 00:00:00
+343,287,15,RESTOCK,87,132,219,Factory delivery confirmed,2023-06-06 00:00:00
+344,503,1,PRODUCTION,55,262,317,Damaged goods removed,2023-08-27 00:00:00
+345,559,5,SALE,32,81,113,Factory delivery confirmed,2023-11-10 00:00:00
+346,575,20,PRODUCTION,20,183,203,Factory delivery confirmed,2024-07-11 00:00:00
+347,70,17,ADJUSTMENT,44,205,249,Factory delivery confirmed,2024-12-04 00:00:00
+348,32,13,SALE,-5,108,103,Damaged goods removed,2024-07-04 00:00:00
+349,49,4,RESTOCK,71,185,256,Factory delivery confirmed,2023-11-13 00:00:00
+350,465,7,RETURN,92,180,272,Production batch received,2023-07-26 00:00:00
+351,364,7,PRODUCTION,13,255,268,Damaged goods removed,2024-08-23 00:00:00
+352,447,2,SALE,36,233,269,Promotional restock,2023-09-19 00:00:00
+353,310,18,SALE,38,194,232,Customer return approved,2023-07-16 00:00:00
+354,56,16,RESTOCK,51,29,80,Promotional restock,2024-02-04 00:00:00
+355,477,7,SALE,-10,0,0,Customer return approved,2024-08-17 00:00:00
+356,69,10,ADJUSTMENT,-6,100,94,Production batch received,2023-09-13 00:00:00
+357,324,9,RESTOCK,36,237,273,Manual stock correction,2024-01-23 00:00:00
+358,466,7,RESTOCK,69,69,138,Online sale processed,2024-10-24 00:00:00
+359,102,5,RESTOCK,83,197,280,Factory delivery confirmed,2023-11-20 00:00:00
+360,199,19,RETURN,46,198,244,Promotional restock,2024-01-21 00:00:00
+361,561,11,SALE,18,69,87,Manual stock correction,2023-06-08 00:00:00
+362,595,15,RESTOCK,77,232,309,Production batch received,2024-07-06 00:00:00
+363,526,19,ADJUSTMENT,99,268,367,Damaged goods removed,2024-06-12 00:00:00
+364,590,2,SALE,-3,172,169,Damaged goods removed,2023-12-07 00:00:00
+365,593,1,RESTOCK,79,138,217,Factory delivery confirmed,2023-07-21 00:00:00
+366,401,17,SALE,94,71,165,Promotional restock,2024-08-07 00:00:00
+367,61,15,RETURN,99,518,617,Manual stock correction,2023-10-04 00:00:00
+368,334,10,RESTOCK,43,28,71,Factory delivery confirmed,2024-10-02 00:00:00
+369,421,4,SALE,-5,235,230,Damaged goods removed,2024-05-17 00:00:00
+370,571,13,RESTOCK,13,113,126,Factory delivery confirmed,2024-10-24 00:00:00
+371,258,16,SALE,-2,98,96,Production batch received,2023-07-10 00:00:00
+372,276,6,SALE,23,131,154,Customer return approved,2023-08-11 00:00:00
+373,553,4,SALE,-10,181,171,Customer return approved,2024-08-09 00:00:00
+374,214,12,RETURN,14,258,272,Production batch received,2024-11-24 00:00:00
+375,212,7,RESTOCK,22,280,302,Manual stock correction,2023-12-12 00:00:00
+376,242,7,PRODUCTION,61,20,81,Online sale processed,2023-06-16 00:00:00
+377,14,11,SALE,69,260,329,Promotional restock,2023-08-24 00:00:00
+378,237,14,ADJUSTMENT,63,68,131,Production batch received,2024-06-09 00:00:00
+379,608,15,RESTOCK,83,210,293,Online sale processed,2023-08-13 00:00:00
+380,459,18,RESTOCK,39,44,83,Online sale processed,2024-07-15 00:00:00
+381,294,2,SALE,91,17,108,Promotional restock,2024-01-10 00:00:00
+382,186,2,SALE,-9,201,192,Seasonal inventory adjustment,2023-12-17 00:00:00
+383,291,2,ADJUSTMENT,26,247,273,Seasonal inventory adjustment,2023-10-18 00:00:00
+384,186,16,ADJUSTMENT,-6,172,166,Damaged goods removed,2024-03-25 00:00:00
+385,367,5,SALE,22,367,389,Factory delivery confirmed,2023-09-29 00:00:00
+386,224,13,SALE,-4,52,48,Seasonal inventory adjustment,2024-10-01 00:00:00
+387,107,11,PRODUCTION,73,290,363,Damaged goods removed,2024-12-11 00:00:00
+388,357,16,RETURN,6,128,134,Factory delivery confirmed,2024-03-31 00:00:00
+389,578,9,PRODUCTION,74,123,197,Damaged goods removed,2023-08-31 00:00:00
+390,172,20,SALE,37,177,214,Promotional restock,2024-11-17 00:00:00
+391,70,20,SALE,-7,95,88,Seasonal inventory adjustment,2024-05-19 00:00:00
+392,201,6,SALE,-9,236,227,Online sale processed,2024-04-18 00:00:00
+393,446,1,RETURN,97,108,205,Promotional restock,2024-07-02 00:00:00
+394,548,1,ADJUSTMENT,-8,318,310,Online sale processed,2023-12-20 00:00:00
+395,58,19,PRODUCTION,47,345,392,Seasonal inventory adjustment,2023-12-26 00:00:00
+396,427,10,RETURN,44,251,295,Seasonal inventory adjustment,2024-01-05 00:00:00
+397,444,7,SALE,-8,58,50,Promotional restock,2024-12-02 00:00:00
+398,218,15,SALE,-9,197,188,Manual stock correction,2024-08-27 00:00:00
+399,400,19,SALE,-8,293,285,Seasonal inventory adjustment,2023-07-28 00:00:00
+400,360,12,RESTOCK,16,295,311,Online sale processed,2024-12-02 00:00:00
+401,57,12,RESTOCK,9,88,97,Customer return approved,2023-07-29 00:00:00
+402,291,4,RESTOCK,66,249,315,Promotional restock,2023-09-10 00:00:00
+403,481,3,SALE,8,240,248,Customer return approved,2024-12-15 00:00:00
+404,575,4,RESTOCK,68,70,138,Seasonal inventory adjustment,2024-07-30 00:00:00
+405,528,18,RETURN,15,0,15,Customer return approved,2023-09-07 00:00:00
+406,480,8,SALE,-8,342,334,Production batch received,2024-05-31 00:00:00
+407,135,10,ADJUSTMENT,-3,242,239,Factory delivery confirmed,2024-06-06 00:00:00
+408,87,10,PRODUCTION,85,224,309,Promotional restock,2024-06-02 00:00:00
+409,558,15,ADJUSTMENT,-8,62,54,Damaged goods removed,2024-12-02 00:00:00
+410,327,8,ADJUSTMENT,57,170,227,Production batch received,2023-11-26 00:00:00
+411,84,19,SALE,-10,350,340,Manual stock correction,2024-01-14 00:00:00
+412,295,14,ADJUSTMENT,40,162,202,Customer return approved,2024-04-06 00:00:00
+413,317,12,ADJUSTMENT,-9,250,241,Online sale processed,2024-10-04 00:00:00
+414,10,3,RETURN,52,54,106,Factory delivery confirmed,2024-02-07 00:00:00
+415,174,15,RESTOCK,28,248,276,Promotional restock,2024-07-10 00:00:00
+416,199,20,SALE,-6,87,81,Promotional restock,2024-08-01 00:00:00
+417,169,15,ADJUSTMENT,-8,146,138,Online sale processed,2023-09-29 00:00:00
+418,42,3,SALE,-2,273,271,Online sale processed,2024-04-23 00:00:00
+419,520,10,ADJUSTMENT,12,336,348,Production batch received,2024-10-14 00:00:00
+420,30,16,RETURN,47,328,375,Damaged goods removed,2023-06-29 00:00:00
+421,364,6,SALE,-4,188,184,Seasonal inventory adjustment,2023-09-15 00:00:00
+422,326,8,PRODUCTION,84,273,357,Promotional restock,2024-12-19 00:00:00
+423,606,12,PRODUCTION,74,138,212,Manual stock correction,2024-10-28 00:00:00
+424,494,20,RESTOCK,43,208,251,Customer return approved,2024-12-14 00:00:00
+425,500,6,ADJUSTMENT,15,176,191,Manual stock correction,2023-08-18 00:00:00
+426,507,3,RESTOCK,89,287,376,Factory delivery confirmed,2024-07-17 00:00:00
+427,423,14,RETURN,43,305,348,Promotional restock,2024-09-29 00:00:00
+428,53,4,SALE,70,184,254,Damaged goods removed,2024-03-30 00:00:00
+429,580,15,RESTOCK,96,617,713,Promotional restock,2024-02-17 00:00:00
+430,354,10,SALE,78,199,277,Factory delivery confirmed,2024-03-09 00:00:00
+431,534,3,SALE,-1,81,80,Promotional restock,2023-08-04 00:00:00
+432,13,2,SALE,33,106,139,Manual stock correction,2024-02-26 00:00:00
+433,559,8,PRODUCTION,6,272,278,Customer return approved,2024-08-09 00:00:00
+434,270,2,PRODUCTION,83,25,108,Customer return approved,2023-12-08 00:00:00
+435,367,4,PRODUCTION,84,294,378,Promotional restock,2023-06-26 00:00:00
+436,51,13,SALE,-10,183,173,Manual stock correction,2023-08-23 00:00:00
+437,97,9,SALE,-9,279,270,Manual stock correction,2023-08-21 00:00:00
+438,110,4,SALE,13,94,107,Damaged goods removed,2023-08-09 00:00:00
+439,259,1,ADJUSTMENT,-8,173,165,Promotional restock,2024-10-25 00:00:00
+440,546,16,SALE,-4,282,278,Manual stock correction,2023-07-14 00:00:00
+441,126,5,SALE,-6,214,208,Manual stock correction,2024-12-26 00:00:00
+442,239,6,SALE,56,107,163,Production batch received,2023-12-02 00:00:00
+443,537,2,SALE,76,364,440,Promotional restock,2024-10-12 00:00:00
+444,314,5,SALE,-8,135,127,Factory delivery confirmed,2024-05-07 00:00:00
+445,528,8,RESTOCK,72,126,198,Seasonal inventory adjustment,2024-12-19 00:00:00
+446,531,7,PRODUCTION,44,359,403,Seasonal inventory adjustment,2023-08-05 00:00:00
+447,396,16,PRODUCTION,54,81,135,Promotional restock,2024-05-03 00:00:00
+448,72,20,RESTOCK,79,273,352,Manual stock correction,2024-03-11 00:00:00
+449,68,15,RESTOCK,18,260,278,Online sale processed,2023-06-14 00:00:00
+450,160,13,RETURN,42,220,262,Damaged goods removed,2023-10-25 00:00:00
+451,611,1,RETURN,75,181,256,Promotional restock,2023-06-22 00:00:00
+452,187,13,PRODUCTION,76,140,216,Promotional restock,2023-12-14 00:00:00
+453,302,9,SALE,-8,164,156,Damaged goods removed,2023-12-23 00:00:00
+454,144,8,SALE,-2,286,284,Promotional restock,2024-08-25 00:00:00
+455,556,17,ADJUSTMENT,56,298,354,Manual stock correction,2023-07-31 00:00:00
+456,280,12,ADJUSTMENT,-8,348,340,Production batch received,2024-01-27 00:00:00
+457,597,13,PRODUCTION,47,403,450,Production batch received,2023-09-02 00:00:00
+458,340,3,ADJUSTMENT,83,65,148,Seasonal inventory adjustment,2024-02-15 00:00:00
+459,173,5,SALE,46,262,308,Factory delivery confirmed,2024-11-02 00:00:00
+460,281,8,SALE,-9,223,214,Manual stock correction,2023-09-06 00:00:00
+461,232,14,SALE,-4,214,210,Damaged goods removed,2024-03-24 00:00:00
+462,454,3,RESTOCK,54,209,263,Factory delivery confirmed,2024-01-23 00:00:00
+463,298,3,SALE,-8,0,0,Promotional restock,2024-12-19 00:00:00
+464,14,7,PRODUCTION,60,203,263,Online sale processed,2024-04-10 00:00:00
+465,11,7,SALE,-4,176,172,Manual stock correction,2023-11-11 00:00:00
+466,520,19,ADJUSTMENT,-2,285,283,Online sale processed,2024-03-12 00:00:00
+467,65,18,SALE,60,317,377,Damaged goods removed,2024-04-13 00:00:00
+468,530,11,RESTOCK,85,163,248,Customer return approved,2024-10-23 00:00:00
+469,55,18,ADJUSTMENT,8,713,721,Factory delivery confirmed,2024-03-21 00:00:00
+470,492,5,SALE,-5,274,269,Online sale processed,2023-11-30 00:00:00
+471,49,7,SALE,-9,99,90,Seasonal inventory adjustment,2024-05-20 00:00:00
+472,386,5,RESTOCK,62,171,233,Damaged goods removed,2024-10-11 00:00:00
+473,8,13,RESTOCK,22,166,188,Damaged goods removed,2023-09-10 00:00:00
+474,85,15,RESTOCK,80,212,292,Production batch received,2023-07-26 00:00:00
+475,365,4,RETURN,73,80,153,Factory delivery confirmed,2024-01-02 00:00:00
+476,189,10,RESTOCK,67,210,277,Production batch received,2024-05-25 00:00:00
+477,291,5,ADJUSTMENT,-7,392,385,Seasonal inventory adjustment,2024-06-04 00:00:00
+478,546,6,SALE,64,21,85,Production batch received,2023-07-15 00:00:00
+479,201,10,SALE,-5,227,222,Damaged goods removed,2023-09-11 00:00:00
+480,347,9,PRODUCTION,91,214,305,Online sale processed,2024-09-28 00:00:00
+481,3,9,SALE,7,230,237,Damaged goods removed,2024-10-07 00:00:00
+482,388,4,RESTOCK,76,115,191,Manual stock correction,2023-06-22 00:00:00
+483,587,10,PRODUCTION,43,248,291,Online sale processed,2024-01-05 00:00:00
+484,249,9,PRODUCTION,70,188,258,Online sale processed,2024-09-24 00:00:00
+485,419,4,RESTOCK,31,291,322,Promotional restock,2024-02-14 00:00:00
+486,163,6,PRODUCTION,8,275,283,Seasonal inventory adjustment,2024-01-28 00:00:00
+487,391,17,RESTOCK,63,53,116,Factory delivery confirmed,2023-11-19 00:00:00
+488,574,15,SALE,-6,118,112,Online sale processed,2024-08-30 00:00:00
+489,592,6,SALE,26,25,51,Damaged goods removed,2024-10-30 00:00:00
+490,541,7,PRODUCTION,8,212,220,Factory delivery confirmed,2024-09-02 00:00:00
+491,615,13,RESTOCK,23,372,395,Production batch received,2023-10-08 00:00:00
+492,441,6,ADJUSTMENT,-5,104,99,Manual stock correction,2024-03-06 00:00:00
+493,39,18,RESTOCK,75,243,318,Online sale processed,2024-08-11 00:00:00
+494,603,6,PRODUCTION,48,131,179,Customer return approved,2023-08-16 00:00:00
+495,359,14,RETURN,7,82,89,Online sale processed,2023-08-15 00:00:00
+496,385,8,RESTOCK,75,367,442,Manual stock correction,2023-10-22 00:00:00
+497,57,13,RESTOCK,61,152,213,Online sale processed,2024-07-18 00:00:00
+498,214,15,RESTOCK,31,253,284,Customer return approved,2024-06-05 00:00:00
+499,472,17,RETURN,58,134,192,Damaged goods removed,2023-09-07 00:00:00
+500,89,4,SALE,-5,385,380,Damaged goods removed,2023-06-17 00:00:00
+501,158,8,SALE,96,297,393,Promotional restock,2024-04-18 00:00:00
+502,86,13,SALE,-6,83,77,Seasonal inventory adjustment,2024-03-16 00:00:00
+503,386,20,SALE,-2,259,257,Seasonal inventory adjustment,2023-06-23 00:00:00
+504,581,9,SALE,47,230,277,Promotional restock,2024-12-16 00:00:00
+505,243,7,RESTOCK,48,275,323,Online sale processed,2023-06-21 00:00:00
+506,247,3,SALE,19,122,141,Customer return approved,2023-08-01 00:00:00
+507,148,20,SALE,-3,159,156,Manual stock correction,2024-05-03 00:00:00
+508,80,4,SALE,-1,49,48,Production batch received,2024-02-10 00:00:00
+509,356,6,SALE,-5,159,154,Damaged goods removed,2024-05-17 00:00:00
+510,538,15,ADJUSTMENT,59,110,169,Customer return approved,2024-07-01 00:00:00
+511,516,19,ADJUSTMENT,97,342,439,Seasonal inventory adjustment,2024-09-01 00:00:00
+512,584,8,ADJUSTMENT,-5,106,101,Online sale processed,2024-10-13 00:00:00
+513,566,11,ADJUSTMENT,-4,47,43,Damaged goods removed,2024-12-17 00:00:00
+514,141,16,SALE,-8,244,236,Damaged goods removed,2023-08-29 00:00:00
+515,488,16,SALE,-8,377,369,Online sale processed,2023-12-15 00:00:00
+516,286,3,SALE,82,96,178,Production batch received,2024-12-21 00:00:00
+517,326,13,RESTOCK,18,188,206,Customer return approved,2024-11-11 00:00:00
+518,532,13,RESTOCK,8,247,255,Seasonal inventory adjustment,2023-11-29 00:00:00
+519,466,7,SALE,10,243,253,Online sale processed,2024-01-25 00:00:00
+520,277,5,SALE,-2,80,78,Production batch received,2024-01-15 00:00:00
+521,171,13,ADJUSTMENT,12,200,212,Seasonal inventory adjustment,2023-11-25 00:00:00
+522,510,2,RESTOCK,80,138,218,Factory delivery confirmed,2024-01-08 00:00:00
+523,378,2,PRODUCTION,33,89,122,Online sale processed,2023-08-23 00:00:00
+524,208,11,SALE,-5,109,104,Factory delivery confirmed,2023-06-07 00:00:00
+525,451,5,SALE,80,340,420,Promotional restock,2024-08-29 00:00:00
+526,191,17,RETURN,37,721,758,Manual stock correction,2023-12-10 00:00:00
+527,305,2,RESTOCK,37,101,138,Seasonal inventory adjustment,2023-08-11 00:00:00
+528,312,1,SALE,72,86,158,Promotional restock,2024-12-26 00:00:00
+529,536,7,RESTOCK,75,347,422,Damaged goods removed,2023-12-11 00:00:00
+530,457,19,RETURN,5,422,427,Seasonal inventory adjustment,2024-06-08 00:00:00
+531,568,9,PRODUCTION,15,3,18,Manual stock correction,2024-10-03 00:00:00
+532,408,18,ADJUSTMENT,47,28,75,Damaged goods removed,2024-06-16 00:00:00
+533,498,14,RESTOCK,86,281,367,Promotional restock,2023-08-18 00:00:00
+534,470,9,SALE,5,0,5,Seasonal inventory adjustment,2024-03-24 00:00:00
+535,358,5,SALE,-7,112,105,Damaged goods removed,2024-11-30 00:00:00
+536,286,18,RESTOCK,61,129,190,Damaged goods removed,2024-02-05 00:00:00
+537,206,12,PRODUCTION,25,273,298,Factory delivery confirmed,2023-10-31 00:00:00
+538,352,10,ADJUSTMENT,-2,62,60,Seasonal inventory adjustment,2024-02-09 00:00:00
+539,269,16,RESTOCK,14,45,59,Customer return approved,2024-02-07 00:00:00
+540,465,19,SALE,-6,15,9,Promotional restock,2023-07-13 00:00:00
+541,119,7,SALE,-6,249,243,Customer return approved,2023-11-07 00:00:00
+542,591,11,ADJUSTMENT,-3,394,391,Damaged goods removed,2024-02-20 00:00:00
+543,231,3,ADJUSTMENT,-5,60,55,Seasonal inventory adjustment,2023-09-26 00:00:00
+544,1,4,SALE,33,147,180,Factory delivery confirmed,2023-12-01 00:00:00
+545,568,3,SALE,90,219,309,Factory delivery confirmed,2024-08-22 00:00:00
+546,347,3,SALE,-2,196,194,Online sale processed,2024-12-10 00:00:00
+547,205,7,SALE,-2,135,133,Promotional restock,2023-09-04 00:00:00
+548,491,13,SALE,46,61,107,Promotional restock,2024-05-19 00:00:00
+549,264,10,SALE,-4,284,280,Promotional restock,2024-06-25 00:00:00
+550,71,5,RESTOCK,22,39,61,Seasonal inventory adjustment,2024-11-19 00:00:00
+551,32,19,SALE,12,199,211,Promotional restock,2023-07-05 00:00:00
+552,496,9,PRODUCTION,13,198,211,Damaged goods removed,2024-05-10 00:00:00
+553,352,6,ADJUSTMENT,-8,142,134,Manual stock correction,2024-10-16 00:00:00
+554,83,12,RESTOCK,67,218,285,Seasonal inventory adjustment,2023-06-06 00:00:00
+555,274,5,SALE,-2,120,118,Customer return approved,2024-09-14 00:00:00
+556,242,6,SALE,-7,334,327,Damaged goods removed,2024-05-22 00:00:00
+557,90,12,RESTOCK,39,94,133,Damaged goods removed,2024-01-09 00:00:00
+558,512,13,ADJUSTMENT,-10,89,79,Online sale processed,2023-06-13 00:00:00
+559,80,11,RESTOCK,70,105,175,Factory delivery confirmed,2024-03-29 00:00:00
+560,38,3,RESTOCK,89,378,467,Seasonal inventory adjustment,2024-05-19 00:00:00
+561,172,20,RESTOCK,17,322,339,Damaged goods removed,2023-06-04 00:00:00
+562,605,14,ADJUSTMENT,-9,104,95,Manual stock correction,2024-12-20 00:00:00
+563,266,9,RESTOCK,18,357,375,Factory delivery confirmed,2024-05-07 00:00:00
+564,592,6,RETURN,72,280,352,Seasonal inventory adjustment,2024-10-20 00:00:00
+565,162,14,RESTOCK,78,153,231,Production batch received,2023-08-28 00:00:00
+566,333,2,RESTOCK,52,78,130,Factory delivery confirmed,2023-09-29 00:00:00
+567,290,17,ADJUSTMENT,-1,154,153,Customer return approved,2023-10-31 00:00:00
+568,582,8,SALE,-2,80,78,Customer return approved,2024-08-17 00:00:00
+569,95,8,SALE,88,107,195,Online sale processed,2024-09-16 00:00:00
+570,398,16,SALE,-1,278,277,Customer return approved,2024-04-01 00:00:00
+571,563,17,SALE,-8,285,277,Manual stock correction,2023-06-26 00:00:00
+572,489,15,SALE,-8,59,51,Online sale processed,2024-07-05 00:00:00
+573,516,1,RETURN,8,217,225,Customer return approved,2023-10-27 00:00:00
+574,405,17,PRODUCTION,94,33,127,Promotional restock,2024-02-05 00:00:00
+575,392,18,SALE,-2,92,90,Damaged goods removed,2023-08-31 00:00:00
+576,177,15,RESTOCK,31,339,370,Factory delivery confirmed,2024-11-03 00:00:00
+577,274,2,SALE,25,183,208,Manual stock correction,2023-11-09 00:00:00
+578,179,8,SALE,-2,55,53,Production batch received,2023-11-12 00:00:00
+579,315,10,RESTOCK,13,195,208,Manual stock correction,2023-12-27 00:00:00
+580,442,3,SALE,21,322,343,Factory delivery confirmed,2024-08-15 00:00:00
+581,514,19,SALE,-8,63,55,Damaged goods removed,2024-02-14 00:00:00
+582,293,19,ADJUSTMENT,-7,208,201,Damaged goods removed,2024-11-07 00:00:00
+583,257,1,RESTOCK,96,158,254,Manual stock correction,2023-07-29 00:00:00
+584,574,5,SALE,-9,305,296,Production batch received,2024-08-24 00:00:00
+585,79,3,ADJUSTMENT,46,294,340,Promotional restock,2023-11-24 00:00:00
+586,539,8,SALE,-3,292,289,Production batch received,2024-09-14 00:00:00
+587,163,3,SALE,-9,197,188,Damaged goods removed,2023-12-06 00:00:00
+588,115,9,SALE,-7,237,230,Seasonal inventory adjustment,2024-06-15 00:00:00
+589,167,6,ADJUSTMENT,-1,98,97,Manual stock correction,2023-09-17 00:00:00
+590,437,6,SALE,-9,427,418,Promotional restock,2023-09-17 00:00:00
+591,187,7,ADJUSTMENT,-5,452,447,Promotional restock,2023-07-10 00:00:00
+592,576,4,ADJUSTMENT,-7,206,199,Online sale processed,2023-12-11 00:00:00
+593,413,9,SALE,-7,236,229,Promotional restock,2023-09-04 00:00:00
+594,101,17,SALE,-10,340,330,Seasonal inventory adjustment,2024-04-06 00:00:00
+595,583,1,SALE,31,138,169,Factory delivery confirmed,2024-12-20 00:00:00
+596,187,14,PRODUCTION,25,369,394,Factory delivery confirmed,2024-05-19 00:00:00
+597,421,7,ADJUSTMENT,87,44,131,Online sale processed,2023-08-03 00:00:00
+598,152,8,ADJUSTMENT,-2,277,275,Manual stock correction,2024-02-27 00:00:00
+599,33,7,RETURN,33,202,235,Seasonal inventory adjustment,2024-06-29 00:00:00
+600,384,6,RESTOCK,16,131,147,Manual stock correction,2024-09-16 00:00:00
+601,60,20,SALE,-5,276,271,Promotional restock,2023-12-03 00:00:00
+602,52,9,ADJUSTMENT,-10,190,180,Damaged goods removed,2024-09-16 00:00:00
+603,598,8,PRODUCTION,93,237,330,Customer return approved,2023-06-29 00:00:00
+604,463,8,RETURN,23,74,97,Factory delivery confirmed,2023-11-24 00:00:00
+605,493,17,SALE,-8,232,224,Seasonal inventory adjustment,2024-05-20 00:00:00
+606,590,5,SALE,-4,280,276,Online sale processed,2024-03-27 00:00:00
+607,610,14,SALE,-2,88,86,Manual stock correction,2024-06-14 00:00:00
+608,509,14,RETURN,59,188,247,Promotional restock,2023-08-11 00:00:00
+609,151,9,PRODUCTION,59,269,328,Seasonal inventory adjustment,2023-11-02 00:00:00
+610,453,9,RESTOCK,5,309,314,Manual stock correction,2024-03-12 00:00:00
+611,301,15,ADJUSTMENT,-4,117,113,Production batch received,2024-01-19 00:00:00
+612,204,11,SALE,70,208,278,Damaged goods removed,2023-08-17 00:00:00
+613,322,7,RESTOCK,38,117,155,Manual stock correction,2024-04-28 00:00:00
+614,455,8,RESTOCK,34,49,83,Seasonal inventory adjustment,2024-11-15 00:00:00
+615,226,2,SALE,44,174,218,Seasonal inventory adjustment,2023-11-16 00:00:00
+616,94,18,ADJUSTMENT,72,51,123,Factory delivery confirmed,2023-10-19 00:00:00
+617,581,15,SALE,6,439,445,Customer return approved,2024-04-21 00:00:00
+618,145,15,ADJUSTMENT,-7,138,131,Seasonal inventory adjustment,2023-07-27 00:00:00
+619,278,12,SALE,27,289,316,Promotional restock,2024-04-29 00:00:00
+620,238,11,SALE,21,201,222,Factory delivery confirmed,2024-04-04 00:00:00
+621,123,17,RESTOCK,27,270,297,Damaged goods removed,2023-10-05 00:00:00
+622,311,20,ADJUSTMENT,-2,191,189,Manual stock correction,2023-08-20 00:00:00
+623,458,18,SALE,-7,227,220,Damaged goods removed,2023-08-11 00:00:00
+624,45,18,ADJUSTMENT,93,222,315,Seasonal inventory adjustment,2023-09-16 00:00:00
+625,559,12,SALE,92,156,248,Online sale processed,2023-09-22 00:00:00
+626,347,10,RESTOCK,42,188,230,Factory delivery confirmed,2023-12-02 00:00:00
+627,206,20,SALE,-9,207,198,Seasonal inventory adjustment,2024-08-15 00:00:00
+628,192,9,SALE,34,230,264,Manual stock correction,2024-10-27 00:00:00
+629,588,10,RETURN,79,125,204,Online sale processed,2024-07-19 00:00:00
+630,274,16,SALE,-10,14,4,Factory delivery confirmed,2023-09-02 00:00:00
+631,20,12,SALE,-2,263,261,Seasonal inventory adjustment,2024-09-29 00:00:00
+632,547,11,RESTOCK,59,98,157,Online sale processed,2024-10-25 00:00:00
+633,387,14,RESTOCK,88,77,165,Online sale processed,2023-10-06 00:00:00
+634,364,20,ADJUSTMENT,-3,394,391,Seasonal inventory adjustment,2024-02-29 00:00:00
+635,360,15,PRODUCTION,75,232,307,Manual stock correction,2024-04-26 00:00:00
+636,304,18,RESTOCK,32,242,274,Customer return approved,2024-01-01 00:00:00
+637,316,3,RESTOCK,70,354,424,Factory delivery confirmed,2024-08-02 00:00:00
+638,610,17,SALE,-6,18,12,Production batch received,2024-12-31 00:00:00
+639,383,20,SALE,69,330,399,Production batch received,2023-08-24 00:00:00
+640,281,3,SALE,-1,152,151,Production batch received,2024-07-02 00:00:00
+641,129,6,SALE,39,389,428,Promotional restock,2023-10-03 00:00:00
+642,566,18,SALE,-4,12,8,Seasonal inventory adjustment,2023-07-07 00:00:00
+643,150,19,RESTOCK,6,122,128,Manual stock correction,2024-01-28 00:00:00
+644,483,13,SALE,-2,147,145,Damaged goods removed,2023-08-21 00:00:00
+645,184,20,RESTOCK,89,232,321,Damaged goods removed,2024-08-24 00:00:00
+646,561,18,SALE,-4,394,390,Production batch received,2024-08-13 00:00:00
+647,472,11,ADJUSTMENT,-1,252,251,Manual stock correction,2023-07-07 00:00:00
+648,545,12,RESTOCK,49,41,90,Online sale processed,2023-08-13 00:00:00
+649,252,20,RESTOCK,63,48,111,Damaged goods removed,2024-06-07 00:00:00
+650,128,12,SALE,-2,375,373,Customer return approved,2023-09-01 00:00:00
+651,86,1,RESTOCK,63,95,158,Seasonal inventory adjustment,2024-02-14 00:00:00
+652,364,11,SALE,-5,263,258,Factory delivery confirmed,2023-06-21 00:00:00
+653,335,18,RESTOCK,36,328,364,Damaged goods removed,2024-05-26 00:00:00
+654,520,18,SALE,13,106,119,Damaged goods removed,2024-10-24 00:00:00
+655,68,16,SALE,10,275,285,Promotional restock,2024-01-24 00:00:00
+656,411,4,SALE,-4,323,319,Customer return approved,2024-09-06 00:00:00
+657,457,5,ADJUSTMENT,-5,106,101,Promotional restock,2023-06-25 00:00:00
+658,524,5,SALE,-4,212,208,Seasonal inventory adjustment,2024-02-05 00:00:00
+659,375,18,SALE,29,418,447,Production batch received,2024-09-11 00:00:00
+660,180,8,RESTOCK,16,61,77,Damaged goods removed,2024-08-12 00:00:00
+661,285,11,SALE,98,204,302,Damaged goods removed,2023-12-05 00:00:00
+662,399,17,SALE,-10,153,143,Seasonal inventory adjustment,2023-08-26 00:00:00
+663,430,19,SALE,-4,340,336,Seasonal inventory adjustment,2023-08-24 00:00:00
+664,170,19,SALE,60,315,375,Customer return approved,2023-11-23 00:00:00
+665,564,6,SALE,-6,399,393,Damaged goods removed,2023-07-19 00:00:00
+666,21,10,RETURN,100,393,493,Manual stock correction,2024-10-24 00:00:00
+667,180,14,RETURN,70,133,203,Production batch received,2023-09-18 00:00:00
+668,335,6,RESTOCK,63,209,272,Manual stock correction,2023-08-14 00:00:00
+669,4,16,RESTOCK,16,205,221,Factory delivery confirmed,2024-12-12 00:00:00
+670,213,11,ADJUSTMENT,-6,224,218,Promotional restock,2024-01-08 00:00:00
+671,165,9,SALE,-7,211,204,Damaged goods removed,2024-12-16 00:00:00
+672,550,16,SALE,-2,391,389,Production batch received,2024-02-28 00:00:00
+673,556,3,SALE,-8,221,213,Promotional restock,2024-11-21 00:00:00
+674,449,10,ADJUSTMENT,-9,17,8,Damaged goods removed,2024-08-17 00:00:00
+675,74,1,SALE,-1,259,258,Damaged goods removed,2024-01-19 00:00:00
+676,37,17,PRODUCTION,15,363,378,Seasonal inventory adjustment,2024-11-13 00:00:00
+677,184,2,PRODUCTION,32,97,129,Manual stock correction,2024-06-22 00:00:00
+678,65,8,RESTOCK,28,196,224,Damaged goods removed,2023-10-05 00:00:00
+679,60,7,SALE,-9,62,53,Factory delivery confirmed,2024-01-10 00:00:00
+680,519,15,SALE,-10,194,184,Customer return approved,2023-07-17 00:00:00
+681,318,16,SALE,-1,103,102,Seasonal inventory adjustment,2024-01-20 00:00:00
+682,85,12,PRODUCTION,62,230,292,Manual stock correction,2024-05-12 00:00:00
+683,363,7,RESTOCK,52,302,354,Manual stock correction,2023-11-22 00:00:00
+684,74,6,RESTOCK,26,247,273,Damaged goods removed,2024-01-01 00:00:00
+685,116,12,SALE,-6,134,128,Online sale processed,2023-10-24 00:00:00
+686,596,9,SALE,-6,218,212,Damaged goods removed,2023-11-20 00:00:00
+687,522,16,ADJUSTMENT,-1,224,223,Promotional restock,2023-06-28 00:00:00
+688,42,14,SALE,42,208,250,Online sale processed,2024-07-08 00:00:00
+689,192,6,ADJUSTMENT,-1,138,137,Seasonal inventory adjustment,2024-04-08 00:00:00
+690,252,7,SALE,-5,345,340,Damaged goods removed,2023-10-03 00:00:00
+691,331,8,SALE,58,75,133,Damaged goods removed,2024-10-16 00:00:00
+692,443,7,RETURN,41,127,168,Seasonal inventory adjustment,2024-03-07 00:00:00
+693,130,14,SALE,-4,391,387,Damaged goods removed,2023-08-12 00:00:00
+694,615,9,SALE,-10,116,106,Manual stock correction,2024-03-07 00:00:00
+695,261,19,PRODUCTION,97,109,206,Seasonal inventory adjustment,2023-07-24 00:00:00
+696,516,13,SALE,-2,296,294,Online sale processed,2024-05-07 00:00:00
+697,451,17,SALE,95,280,375,Damaged goods removed,2023-11-19 00:00:00
+698,304,3,RESTOCK,39,29,68,Customer return approved,2024-02-27 00:00:00
+699,488,18,ADJUSTMENT,-9,258,249,Promotional restock,2023-12-24 00:00:00
+700,273,10,RETURN,37,272,309,Factory delivery confirmed,2023-09-17 00:00:00
+701,19,17,SALE,-9,255,246,Damaged goods removed,2023-06-05 00:00:00
+702,586,18,PRODUCTION,6,83,89,Online sale processed,2023-07-05 00:00:00
+703,380,9,PRODUCTION,9,133,142,Manual stock correction,2024-01-27 00:00:00
+704,139,15,RESTOCK,78,216,294,Factory delivery confirmed,2023-10-07 00:00:00
+705,369,14,ADJUSTMENT,-6,224,218,Customer return approved,2023-09-06 00:00:00
+706,584,12,SALE,-2,237,235,Promotional restock,2023-07-03 00:00:00
+707,210,11,SALE,-5,131,126,Customer return approved,2023-12-07 00:00:00
+708,500,13,SALE,-10,245,235,Online sale processed,2023-06-05 00:00:00
+709,200,7,SALE,99,327,426,Production batch received,2024-03-16 00:00:00
+710,604,10,RESTOCK,90,450,540,Seasonal inventory adjustment,2024-06-01 00:00:00
+711,571,10,SALE,-2,294,292,Production batch received,2023-08-25 00:00:00
+712,106,13,SALE,-8,353,345,Seasonal inventory adjustment,2024-12-24 00:00:00
+713,533,11,SALE,-8,55,47,Damaged goods removed,2024-03-10 00:00:00
+714,150,19,PRODUCTION,52,120,172,Damaged goods removed,2023-06-09 00:00:00
+715,520,2,RETURN,57,143,200,Factory delivery confirmed,2024-07-22 00:00:00
+716,481,10,RETURN,87,200,287,Factory delivery confirmed,2023-10-04 00:00:00
+717,127,19,ADJUSTMENT,-7,336,329,Damaged goods removed,2024-05-19 00:00:00
+718,578,5,SALE,-1,296,295,Online sale processed,2024-04-28 00:00:00
+719,509,14,RETURN,91,180,271,Production batch received,2024-06-03 00:00:00
+720,274,17,SALE,56,50,106,Customer return approved,2024-01-08 00:00:00
+721,354,9,SALE,-9,106,97,Factory delivery confirmed,2024-07-28 00:00:00
+722,449,14,RETURN,62,251,313,Manual stock correction,2023-06-11 00:00:00
+723,554,9,RESTOCK,88,131,219,Production batch received,2024-11-25 00:00:00
+724,298,3,RESTOCK,88,90,178,Customer return approved,2023-12-10 00:00:00
+725,54,16,SALE,-8,194,186,Promotional restock,2024-01-31 00:00:00
+726,212,12,SALE,-10,108,98,Promotional restock,2024-06-10 00:00:00
+727,189,11,SALE,-7,77,70,Production batch received,2023-06-29 00:00:00
+728,393,16,ADJUSTMENT,-2,248,246,Seasonal inventory adjustment,2024-09-16 00:00:00
+729,158,19,RESTOCK,17,97,114,Factory delivery confirmed,2024-05-30 00:00:00
+730,475,6,RETURN,44,246,290,Manual stock correction,2023-09-10 00:00:00
+731,393,8,SALE,-8,5,0,Online sale processed,2024-10-18 00:00:00
+732,47,15,SALE,-3,426,423,Customer return approved,2024-07-08 00:00:00
+733,287,16,SALE,-10,258,248,Factory delivery confirmed,2024-03-08 00:00:00
+734,366,18,SALE,-10,129,119,Manual stock correction,2023-06-22 00:00:00
+735,242,6,ADJUSTMENT,-1,261,260,Promotional restock,2024-11-28 00:00:00
+736,266,15,ADJUSTMENT,-5,147,142,Production batch received,2023-09-13 00:00:00
+737,331,19,PRODUCTION,18,308,326,Seasonal inventory adjustment,2023-08-03 00:00:00
+738,373,19,PRODUCTION,30,203,233,Online sale processed,2024-02-25 00:00:00
+739,158,10,ADJUSTMENT,-4,163,159,Online sale processed,2024-04-09 00:00:00
+740,91,4,RESTOCK,93,128,221,Online sale processed,2023-09-17 00:00:00
+741,229,1,SALE,9,142,151,Online sale processed,2024-08-23 00:00:00
+742,560,2,SALE,-3,277,274,Manual stock correction,2023-10-23 00:00:00
+743,137,18,RESTOCK,98,148,246,Factory delivery confirmed,2024-01-05 00:00:00
+744,206,2,ADJUSTMENT,75,352,427,Factory delivery confirmed,2024-08-05 00:00:00
+745,133,4,ADJUSTMENT,-6,309,303,Damaged goods removed,2023-11-09 00:00:00
+746,41,6,SALE,-5,309,304,Manual stock correction,2024-09-10 00:00:00
+747,17,18,SALE,-8,367,359,Damaged goods removed,2024-08-26 00:00:00
+748,117,19,ADJUSTMENT,-2,375,373,Promotional restock,2023-08-02 00:00:00
+749,562,13,SALE,-6,256,250,Promotional restock,2023-12-31 00:00:00
+750,170,10,RESTOCK,49,239,288,Online sale processed,2023-07-09 00:00:00
+751,98,2,SALE,-5,106,101,Factory delivery confirmed,2023-07-29 00:00:00
+752,372,15,SALE,35,161,196,Customer return approved,2024-12-17 00:00:00
+753,428,16,ADJUSTMENT,-6,145,139,Production batch received,2024-12-19 00:00:00
+754,221,12,SALE,5,191,196,Seasonal inventory adjustment,2024-03-16 00:00:00
+755,236,17,SALE,-1,86,85,Seasonal inventory adjustment,2024-07-06 00:00:00
+756,531,11,ADJUSTMENT,-2,222,220,Promotional restock,2023-09-10 00:00:00
+757,199,16,SALE,34,272,306,Production batch received,2023-08-13 00:00:00
+758,46,5,SALE,-9,271,262,Manual stock correction,2024-07-06 00:00:00
+759,118,18,PRODUCTION,76,220,296,Customer return approved,2023-08-26 00:00:00
+760,510,6,SALE,94,113,207,Damaged goods removed,2024-05-09 00:00:00
+761,562,9,RESTOCK,7,142,149,Customer return approved,2024-09-08 00:00:00
+762,61,4,RETURN,82,235,317,Manual stock correction,2023-09-25 00:00:00
+763,221,18,RESTOCK,59,390,449,Factory delivery confirmed,2024-03-10 00:00:00
+764,64,11,SALE,27,254,281,Promotional restock,2024-08-14 00:00:00
+765,547,3,RESTOCK,52,447,499,Seasonal inventory adjustment,2024-01-20 00:00:00
+766,373,2,SALE,-6,192,186,Production batch received,2023-11-12 00:00:00
+767,265,15,PRODUCTION,37,193,230,Production batch received,2023-12-18 00:00:00
+768,225,20,ADJUSTMENT,74,179,253,Seasonal inventory adjustment,2024-04-06 00:00:00
+769,345,12,SALE,47,330,377,Promotional restock,2024-07-25 00:00:00
+770,80,15,SALE,-10,449,439,Damaged goods removed,2024-02-11 00:00:00
+771,539,16,RESTOCK,68,178,246,Online sale processed,2024-02-09 00:00:00
+772,512,1,SALE,-9,342,333,Manual stock correction,2024-09-06 00:00:00
+773,442,18,RESTOCK,32,142,174,Promotional restock,2023-12-07 00:00:00
+774,203,9,SALE,-7,112,105,Online sale processed,2024-07-09 00:00:00
+775,147,10,SALE,-7,213,206,Online sale processed,2024-07-05 00:00:00
+776,388,6,SALE,-8,151,143,Factory delivery confirmed,2024-09-24 00:00:00
+777,605,3,SALE,-4,218,214,Seasonal inventory adjustment,2024-11-02 00:00:00
+778,129,1,SALE,52,276,328,Online sale processed,2023-12-21 00:00:00
+779,445,9,SALE,-3,208,205,Production batch received,2024-09-27 00:00:00
+780,426,16,ADJUSTMENT,-4,177,173,Factory delivery confirmed,2024-08-21 00:00:00
+781,247,16,ADJUSTMENT,-6,211,205,Promotional restock,2023-09-08 00:00:00
+782,486,15,SALE,97,283,380,Promotional restock,2024-04-19 00:00:00
+783,512,1,ADJUSTMENT,76,9,85,Seasonal inventory adjustment,2024-06-11 00:00:00
+784,422,20,PRODUCTION,73,276,349,Customer return approved,2024-01-10 00:00:00
+785,95,1,RESTOCK,70,241,311,Factory delivery confirmed,2023-11-15 00:00:00
+786,540,4,SALE,-1,184,183,Production batch received,2023-11-21 00:00:00
+787,486,12,RESTOCK,33,157,190,Production batch received,2024-02-14 00:00:00
+788,178,4,RESTOCK,66,8,74,Damaged goods removed,2024-12-12 00:00:00
+789,279,15,SALE,-7,540,533,Production batch received,2024-09-11 00:00:00
+790,293,20,RETURN,26,373,399,Promotional restock,2024-01-09 00:00:00
+791,392,14,ADJUSTMENT,55,209,264,Manual stock correction,2023-06-21 00:00:00
+792,289,14,SALE,-5,296,291,Customer return approved,2024-08-03 00:00:00
+793,105,14,RETURN,41,235,276,Production batch received,2023-09-26 00:00:00
+794,486,11,ADJUSTMENT,-5,231,226,Production batch received,2024-04-23 00:00:00
+795,312,4,RETURN,88,94,182,Factory delivery confirmed,2024-04-30 00:00:00
+796,227,4,RESTOCK,6,248,254,Factory delivery confirmed,2023-10-31 00:00:00
+797,417,7,PRODUCTION,75,309,384,Promotional restock,2023-12-22 00:00:00
+798,114,10,ADJUSTMENT,-7,364,357,Online sale processed,2023-10-24 00:00:00
+799,23,10,RESTOCK,75,25,100,Seasonal inventory adjustment,2024-01-25 00:00:00
+800,235,8,PRODUCTION,97,246,343,Production batch received,2023-07-15 00:00:00
+801,513,6,PRODUCTION,5,118,123,Promotional restock,2023-10-15 00:00:00
+802,60,5,SALE,-9,291,282,Seasonal inventory adjustment,2023-10-25 00:00:00
+803,454,14,RESTOCK,45,141,186,Customer return approved,2024-01-28 00:00:00
+804,494,1,PRODUCTION,23,85,108,Production batch received,2024-02-14 00:00:00
+805,84,3,RESTOCK,62,169,231,Promotional restock,2023-11-18 00:00:00
+806,196,10,RESTOCK,39,264,303,Factory delivery confirmed,2024-01-09 00:00:00
+807,282,4,SALE,-1,99,98,Promotional restock,2024-03-31 00:00:00
+808,247,3,SALE,-5,159,154,Promotional restock,2024-04-18 00:00:00
+809,376,11,SALE,-3,314,311,Manual stock correction,2023-09-18 00:00:00
+810,577,5,SALE,-7,467,460,Seasonal inventory adjustment,2023-07-29 00:00:00
+811,462,9,PRODUCTION,60,111,171,Promotional restock,2024-06-18 00:00:00
+812,462,18,SALE,-6,460,454,Customer return approved,2023-09-21 00:00:00
+813,123,4,RESTOCK,71,8,79,Factory delivery confirmed,2024-12-28 00:00:00
+814,153,10,RESTOCK,39,420,459,Seasonal inventory adjustment,2024-08-25 00:00:00
+815,409,7,RESTOCK,10,212,222,Manual stock correction,2024-07-05 00:00:00
+816,341,8,SALE,-10,328,318,Online sale processed,2024-08-07 00:00:00
+817,254,12,RETURN,52,368,420,Online sale processed,2024-10-31 00:00:00
+818,165,14,PRODUCTION,69,190,259,Production batch received,2024-03-20 00:00:00
+819,60,1,RETURN,18,359,377,Customer return approved,2024-09-17 00:00:00
+820,253,13,PRODUCTION,92,303,395,Online sale processed,2023-11-23 00:00:00
+821,197,13,ADJUSTMENT,-1,269,268,Customer return approved,2024-09-20 00:00:00
+822,224,13,RESTOCK,47,171,218,Promotional restock,2024-08-17 00:00:00
+823,564,13,RETURN,71,223,294,Promotional restock,2024-02-07 00:00:00
+824,528,5,RESTOCK,57,216,273,Customer return approved,2023-12-16 00:00:00
+825,593,4,PRODUCTION,81,22,103,Seasonal inventory adjustment,2024-10-30 00:00:00
+826,302,18,SALE,-7,78,71,Customer return approved,2024-05-15 00:00:00
+827,598,16,RESTOCK,51,78,129,Seasonal inventory adjustment,2023-11-29 00:00:00
+828,493,14,PRODUCTION,86,340,426,Customer return approved,2024-07-28 00:00:00
+829,521,16,RETURN,95,274,369,Online sale processed,2024-07-12 00:00:00
+830,392,13,ADJUSTMENT,60,186,246,Promotional restock,2023-08-13 00:00:00
+831,275,12,SALE,87,278,365,Damaged goods removed,2023-07-11 00:00:00
+832,7,8,PRODUCTION,49,117,166,Seasonal inventory adjustment,2024-10-11 00:00:00
+833,514,11,SALE,67,277,344,Promotional restock,2024-01-23 00:00:00
+834,128,17,SALE,-7,287,280,Production batch received,2024-05-19 00:00:00
+835,368,8,PRODUCTION,85,235,320,Damaged goods removed,2024-02-25 00:00:00
+836,382,8,RESTOCK,90,97,187,Production batch received,2024-11-23 00:00:00
+837,220,20,RESTOCK,50,204,254,Customer return approved,2024-08-14 00:00:00
+838,520,13,SALE,-4,135,131,Factory delivery confirmed,2024-05-05 00:00:00
+839,346,20,SALE,-10,51,41,Customer return approved,2024-07-07 00:00:00
+840,10,6,PRODUCTION,88,349,437,Production batch received,2024-02-17 00:00:00
+841,511,9,RESTOCK,60,70,130,Production batch received,2023-06-22 00:00:00
+842,542,9,RETURN,52,210,262,Promotional restock,2024-09-12 00:00:00
+843,441,15,RESTOCK,25,113,138,Seasonal inventory adjustment,2024-08-21 00:00:00
+844,101,16,PRODUCTION,72,278,350,Online sale processed,2023-06-21 00:00:00
+845,165,8,SALE,-10,343,333,Promotional restock,2024-08-18 00:00:00
+846,178,13,SALE,65,426,491,Customer return approved,2023-12-21 00:00:00
+847,65,2,SALE,-8,173,165,Customer return approved,2024-11-04 00:00:00
+848,61,15,SALE,-6,357,351,Damaged goods removed,2023-11-26 00:00:00
+849,264,20,SALE,-4,289,285,Damaged goods removed,2024-12-30 00:00:00
+850,354,18,RESTOCK,81,244,325,Customer return approved,2024-01-18 00:00:00
+851,261,19,ADJUSTMENT,-7,41,34,Seasonal inventory adjustment,2023-12-06 00:00:00
+852,594,12,ADJUSTMENT,-2,34,32,Customer return approved,2024-01-06 00:00:00
+853,397,6,SALE,-1,319,318,Seasonal inventory adjustment,2024-03-04 00:00:00
+854,324,15,SALE,-2,297,295,Production batch received,2024-12-14 00:00:00
+855,550,4,ADJUSTMENT,56,74,130,Damaged goods removed,2024-10-12 00:00:00
+856,405,13,SALE,-8,428,420,Promotional restock,2024-04-21 00:00:00
+857,148,17,SALE,59,81,140,Seasonal inventory adjustment,2024-10-05 00:00:00
+858,82,8,PRODUCTION,91,292,383,Damaged goods removed,2023-12-25 00:00:00
+859,39,13,ADJUSTMENT,-9,186,177,Manual stock correction,2024-07-27 00:00:00
+860,330,3,SALE,-1,91,90,Factory delivery confirmed,2024-07-03 00:00:00
+861,397,9,SALE,-7,329,322,Factory delivery confirmed,2023-08-13 00:00:00
+862,452,19,SALE,-4,254,250,Online sale processed,2024-02-25 00:00:00
+863,399,15,RESTOCK,73,169,242,Production batch received,2023-12-01 00:00:00
+864,38,7,PRODUCTION,43,314,357,Manual stock correction,2024-03-28 00:00:00
+865,116,6,RETURN,68,258,326,Damaged goods removed,2024-06-27 00:00:00
+866,265,7,RESTOCK,5,67,72,Factory delivery confirmed,2023-07-02 00:00:00
+867,289,11,RESTOCK,61,251,312,Damaged goods removed,2024-05-22 00:00:00
+868,71,14,RETURN,97,112,209,Factory delivery confirmed,2024-04-26 00:00:00
+869,355,7,RESTOCK,75,250,325,Production batch received,2024-05-08 00:00:00
+870,81,11,RETURN,38,262,300,Factory delivery confirmed,2024-08-08 00:00:00
+871,69,10,RETURN,37,319,356,Customer return approved,2023-10-30 00:00:00
+872,179,6,RETURN,87,196,283,Seasonal inventory adjustment,2023-11-18 00:00:00
+873,117,7,PRODUCTION,7,284,291,Customer return approved,2024-12-05 00:00:00
+874,63,17,ADJUSTMENT,13,322,335,Promotional restock,2024-06-09 00:00:00
+875,551,9,SALE,59,225,284,Factory delivery confirmed,2024-01-05 00:00:00
+876,190,13,RETURN,22,198,220,Online sale processed,2024-06-20 00:00:00
+877,450,2,ADJUSTMENT,-1,330,329,Damaged goods removed,2024-04-14 00:00:00
+878,553,5,ADJUSTMENT,15,377,392,Manual stock correction,2023-06-07 00:00:00
+879,373,5,PRODUCTION,28,187,215,Manual stock correction,2024-02-10 00:00:00
+880,344,18,RESTOCK,24,144,168,Seasonal inventory adjustment,2024-02-01 00:00:00
+881,120,19,ADJUSTMENT,14,98,112,Production batch received,2024-06-27 00:00:00
+882,609,14,RETURN,28,84,112,Promotional restock,2024-11-08 00:00:00
+883,390,9,SALE,-9,53,44,Manual stock correction,2024-11-27 00:00:00
+884,96,12,PRODUCTION,67,377,444,Online sale processed,2024-12-06 00:00:00
+885,292,3,SALE,-9,168,159,Customer return approved,2023-08-02 00:00:00
+886,123,4,SALE,-8,71,63,Factory delivery confirmed,2023-07-25 00:00:00
+887,387,3,PRODUCTION,90,178,268,Production batch received,2024-05-15 00:00:00
+888,530,16,RESTOCK,63,4,67,Promotional restock,2024-12-30 00:00:00
+889,218,2,SALE,-10,256,246,Damaged goods removed,2024-09-29 00:00:00
+890,253,10,RESTOCK,83,248,331,Online sale processed,2024-03-18 00:00:00
+891,291,2,SALE,-5,256,251,Damaged goods removed,2023-06-23 00:00:00
+892,483,17,SALE,-7,119,112,Manual stock correction,2024-01-17 00:00:00
+893,559,16,ADJUSTMENT,83,379,462,Customer return approved,2023-10-21 00:00:00
+894,178,10,SALE,6,92,98,Customer return approved,2024-05-11 00:00:00
+895,305,3,PRODUCTION,45,131,176,Damaged goods removed,2023-12-15 00:00:00
+896,492,17,PRODUCTION,81,393,474,Promotional restock,2024-08-03 00:00:00
+897,160,7,ADJUSTMENT,-10,208,198,Promotional restock,2024-03-15 00:00:00
+898,276,19,SALE,-8,141,133,Seasonal inventory adjustment,2024-07-22 00:00:00
+899,468,20,RESTOCK,20,83,103,Production batch received,2024-03-25 00:00:00
+900,458,17,RETURN,48,246,294,Customer return approved,2024-09-02 00:00:00
+901,238,18,SALE,62,101,163,Customer return approved,2024-09-14 00:00:00
+902,552,3,SALE,-4,275,271,Manual stock correction,2024-07-29 00:00:00
+903,539,1,PRODUCTION,50,277,327,Manual stock correction,2024-02-08 00:00:00
+904,490,9,ADJUSTMENT,14,195,209,Promotional restock,2024-05-27 00:00:00
+905,608,18,SALE,-8,177,169,Promotional restock,2024-03-30 00:00:00
+906,507,18,ADJUSTMENT,66,326,392,Manual stock correction,2024-04-17 00:00:00
+907,264,7,SALE,44,325,369,Factory delivery confirmed,2024-09-18 00:00:00
+908,204,9,RESTOCK,80,533,613,Production batch received,2024-02-20 00:00:00
+909,264,16,RESTOCK,64,613,677,Customer return approved,2024-07-08 00:00:00
+910,194,10,ADJUSTMENT,25,231,256,Seasonal inventory adjustment,2024-11-05 00:00:00
+911,535,1,PRODUCTION,30,293,323,Factory delivery confirmed,2024-02-19 00:00:00
+912,611,18,SALE,-8,371,363,Damaged goods removed,2023-10-28 00:00:00
+913,367,6,SALE,-8,309,301,Factory delivery confirmed,2024-04-27 00:00:00
+914,118,1,SALE,16,327,343,Promotional restock,2024-05-14 00:00:00
+915,556,7,RETURN,67,63,130,Customer return approved,2024-12-11 00:00:00
+916,142,19,SALE,-8,284,276,Online sale processed,2023-09-25 00:00:00
+917,100,14,ADJUSTMENT,-10,198,188,Seasonal inventory adjustment,2024-10-09 00:00:00
+918,614,9,ADJUSTMENT,-6,169,163,Damaged goods removed,2023-08-07 00:00:00
+919,549,11,SALE,-3,71,68,Manual stock correction,2024-08-01 00:00:00
+920,107,1,SALE,5,335,340,Factory delivery confirmed,2023-12-15 00:00:00
+921,314,10,SALE,-9,105,96,Manual stock correction,2023-07-16 00:00:00
+922,552,19,RETURN,90,301,391,Customer return approved,2024-01-06 00:00:00
+923,10,9,RETURN,82,207,289,Damaged goods removed,2024-02-14 00:00:00
+924,349,9,SALE,32,376,408,Manual stock correction,2024-11-05 00:00:00
+925,372,17,SALE,-2,137,135,Production batch received,2023-07-07 00:00:00
+926,415,12,SALE,-7,103,96,Factory delivery confirmed,2024-06-27 00:00:00
+927,69,12,SALE,-7,68,61,Manual stock correction,2024-09-23 00:00:00
+928,32,3,RESTOCK,49,348,397,Production batch received,2023-09-28 00:00:00
+929,57,1,RESTOCK,65,44,109,Factory delivery confirmed,2023-10-24 00:00:00
+930,124,15,SALE,-3,168,165,Promotional restock,2023-12-08 00:00:00
+931,21,5,RESTOCK,94,357,451,Damaged goods removed,2023-12-17 00:00:00
+932,274,13,SALE,-4,251,247,Promotional restock,2024-03-13 00:00:00
+933,266,15,ADJUSTMENT,-6,226,220,Damaged goods removed,2024-05-15 00:00:00
+934,97,11,ADJUSTMENT,-10,130,120,Seasonal inventory adjustment,2024-11-22 00:00:00
+935,377,13,ADJUSTMENT,10,226,236,Production batch received,2024-09-20 00:00:00
+936,495,13,ADJUSTMENT,-3,292,289,Online sale processed,2023-09-09 00:00:00
+937,82,16,ADJUSTMENT,-7,423,416,Seasonal inventory adjustment,2024-09-20 00:00:00
+938,468,20,RESTOCK,20,300,320,Damaged goods removed,2024-05-30 00:00:00
+939,518,20,ADJUSTMENT,-6,189,183,Online sale processed,2023-07-05 00:00:00
+940,89,20,SALE,-2,154,152,Manual stock correction,2023-12-19 00:00:00
+941,233,11,RETURN,23,271,294,Production batch received,2024-05-03 00:00:00
+942,414,20,ADJUSTMENT,-5,284,279,Manual stock correction,2024-02-04 00:00:00
+943,151,12,RETURN,83,61,144,Customer return approved,2024-08-06 00:00:00
+944,525,17,SALE,-5,169,164,Damaged goods removed,2023-12-31 00:00:00
+945,193,13,RESTOCK,48,323,371,Online sale processed,2024-05-18 00:00:00
+946,460,15,SALE,21,67,88,Customer return approved,2024-03-15 00:00:00
+947,420,3,SALE,-5,229,224,Factory delivery confirmed,2024-07-02 00:00:00
+948,167,2,ADJUSTMENT,-9,68,59,Damaged goods removed,2024-09-05 00:00:00
+949,318,17,ADJUSTMENT,92,143,235,Damaged goods removed,2023-06-28 00:00:00
+950,492,3,SALE,29,315,344,Online sale processed,2024-02-27 00:00:00
+951,456,12,ADJUSTMENT,-6,274,268,Damaged goods removed,2023-12-30 00:00:00
+952,321,14,SALE,88,297,385,Customer return approved,2024-11-02 00:00:00
+953,397,11,SALE,75,206,281,Production batch received,2024-01-05 00:00:00
+954,472,20,SALE,-9,233,224,Damaged goods removed,2023-06-25 00:00:00
+955,324,1,RESTOCK,71,306,377,Factory delivery confirmed,2023-11-12 00:00:00
+956,575,11,RETURN,35,219,254,Customer return approved,2023-09-21 00:00:00
+957,591,11,SALE,-6,281,275,Seasonal inventory adjustment,2023-10-03 00:00:00
+958,426,7,ADJUSTMENT,-9,224,215,Seasonal inventory adjustment,2024-03-24 00:00:00
+959,367,4,ADJUSTMENT,-2,81,79,Seasonal inventory adjustment,2023-08-17 00:00:00
+960,305,8,RETURN,81,48,129,Production batch received,2024-03-31 00:00:00
+961,267,1,ADJUSTMENT,-6,165,159,Production batch received,2023-10-04 00:00:00
+962,410,19,RESTOCK,67,276,343,Damaged goods removed,2024-02-05 00:00:00
+963,395,13,ADJUSTMENT,94,344,438,Manual stock correction,2024-12-27 00:00:00
+964,581,6,SALE,-10,304,294,Manual stock correction,2024-03-11 00:00:00
+965,475,2,SALE,-4,302,298,Manual stock correction,2023-06-19 00:00:00
+966,239,8,SALE,-5,43,38,Seasonal inventory adjustment,2023-12-27 00:00:00
+967,357,12,RETURN,97,420,517,Seasonal inventory adjustment,2023-11-19 00:00:00
+968,170,15,RESTOCK,89,114,203,Factory delivery confirmed,2023-12-28 00:00:00
+969,204,4,RETURN,88,268,356,Online sale processed,2024-07-29 00:00:00
+970,560,14,SALE,55,204,259,Production batch received,2024-01-10 00:00:00
+971,606,17,RESTOCK,57,440,497,Production batch received,2023-08-29 00:00:00
+972,574,14,SALE,-8,47,39,Seasonal inventory adjustment,2023-07-06 00:00:00
+973,589,5,SALE,-2,294,292,Production batch received,2023-10-06 00:00:00
+974,191,7,ADJUSTMENT,-8,316,308,Online sale processed,2023-09-23 00:00:00
+975,507,7,SALE,39,389,428,Online sale processed,2023-09-16 00:00:00
+976,100,17,SALE,-8,123,115,Customer return approved,2024-08-19 00:00:00
+977,190,5,RESTOCK,29,254,283,Manual stock correction,2023-09-29 00:00:00
+978,427,13,PRODUCTION,68,218,286,Factory delivery confirmed,2024-01-08 00:00:00
+979,309,14,SALE,-8,356,348,Promotional restock,2024-05-10 00:00:00
+980,63,8,RESTOCK,93,19,112,Online sale processed,2024-04-05 00:00:00
+981,270,10,RETURN,8,355,363,Promotional restock,2024-12-27 00:00:00
+982,421,2,SALE,-6,152,146,Online sale processed,2023-12-12 00:00:00
+983,494,13,SALE,36,289,325,Production batch received,2023-10-28 00:00:00
+984,199,5,RESTOCK,57,90,147,Online sale processed,2024-05-19 00:00:00
+985,527,11,RESTOCK,98,147,245,Production batch received,2024-02-06 00:00:00
+986,379,1,RESTOCK,7,61,68,Factory delivery confirmed,2024-10-25 00:00:00
+987,25,5,SALE,89,282,371,Customer return approved,2024-05-07 00:00:00
+988,46,11,ADJUSTMENT,-6,370,364,Online sale processed,2024-01-11 00:00:00
+989,527,14,RETURN,65,79,144,Promotional restock,2024-04-28 00:00:00
+990,98,17,SALE,-7,258,251,Seasonal inventory adjustment,2024-07-07 00:00:00
+991,505,8,SALE,-9,373,364,Seasonal inventory adjustment,2024-11-21 00:00:00
+992,70,8,SALE,-3,209,206,Customer return approved,2023-06-30 00:00:00
+993,461,15,RETURN,33,98,131,Promotional restock,2024-11-21 00:00:00
+994,234,16,SALE,-4,352,348,Online sale processed,2023-11-23 00:00:00
+995,559,16,RESTOCK,61,462,523,Promotional restock,2024-11-12 00:00:00
+996,96,6,RESTOCK,76,203,279,Manual stock correction,2024-01-09 00:00:00
+997,557,2,SALE,-7,183,176,Customer return approved,2024-10-25 00:00:00
+998,98,17,ADJUSTMENT,73,497,570,Promotional restock,2024-08-29 00:00:00
+999,432,19,RETURN,83,123,206,Factory delivery confirmed,2023-07-25 00:00:00
+1000,474,13,SALE,-7,276,269,Seasonal inventory adjustment,2023-12-09 00:00:00

@@ -1,0 +1,153 @@
+<head>
+    <style type="text/css">
+      <!--
+        body { color: #000000; font-family: Dialog; font-size: 22px }
+      -->
+    </style>
+    
+  </head>
+  <body>
+    <h2 charset="UTF-8" class="text-text-100 mt-3 -mb-1 text-[1.125rem] font-bold" font-style="normal" letter-spacing="normal" style="color:rgb(255, 255, 255);text-align:start;" text-indent="0px" text-transform="none" white-space="normal" word-spacing="0px">
+      <span bgcolor="#ffffff" style="background-color:#ffffff;"><font style="color:#000000;">Textual 
+      Analysis - GarmentIQ Case Study </font></span>
+    </h2>
+    <h3 class="text-text-100 mt-2 -mb-1 text-base font-bold" font-style="normal" letter-spacing="normal" style="color:rgb(255, 255, 255);text-align:start;" text-indent="0px" text-transform="none" white-space="normal" word-spacing="0px">
+      <span bgcolor="#ffffff" style="background-color:#ffffff;"><font style="color:#000000;">Scenario: 
+      Manager logs in, reviews operations, and notifies supplier </font></span>
+    </h3>
+    <font style="color:#000000;"><hr class="border-border-200 border-t-0.5 my-3 mx-1.5" font-style="normal" letter-spacing="normal" style="background-color:#ffffff;color:#000000;font-weight:400;text-align:start;" text-indent="0px" text-transform="none" white-space="normal" word-spacing="0px">
+    </font>
+
+    <p class="font-claude-response-body break-words whitespace-normal leading-[1.7]" font-style="normal" letter-spacing="normal" style="color:rgb(255, 255, 255);font-weight:400;text-align:start;" text-indent="0px" text-transform="none" white-space="normal" word-spacing="0px">
+      <strong><span bgcolor="#ffffff" style="background-color:#ffffff;"><font style="color:#000000;">UC-01 
+      -&nbsp;Log in to system</font></span></strong><span bgcolor="#ffffff" style="background-color:#ffffff;"><font style="color:#000000;">&nbsp;Sarah 
+      Mitchell (Manager) opens the GarmentIQ web portal and enters her 
+      credentials (<code class="bg-text-200/5 border border-0.5 border-border-300 text-danger-000 whitespace-pre-wrap rounded-[0.4rem] px-1 py-px text-[0.9rem]">sarah.mitchell@gmail.com</code>, 
+      username&nbsp;<code class="bg-text-200/5 border border-0.5 border-border-300 text-danger-000 whitespace-pre-wrap rounded-[0.4rem] px-1 py-px text-[0.9rem]">garment-iq-sarah1991</code>). 
+      The system validates her identity against the&nbsp;<code class="bg-text-200/5 border border-0.5 border-border-300 text-danger-000 whitespace-pre-wrap rounded-[0.4rem] px-1 py-px text-[0.9rem]">USERS</code>&nbsp;table, 
+      confirms her&nbsp;<code class="bg-text-200/5 border border-0.5 border-border-300 text-danger-000 whitespace-pre-wrap rounded-[0.4rem] px-1 py-px text-[0.9rem]">role_id 
+      = 1</code>&nbsp;(Manager) from the&nbsp;<code class="bg-text-200/5 border border-0.5 border-border-300 text-danger-000 whitespace-pre-wrap rounded-[0.4rem] px-1 py-px text-[0.9rem]">ROLES</code>&nbsp;table, 
+      and grants her full access to the dashboard and all management modules. </font></span>
+    </p>
+    <font style="color:#000000;"><hr class="border-border-200 border-t-0.5 my-3 mx-1.5" font-style="normal" letter-spacing="normal" style="background-color:#ffffff;color:#000000;font-weight:400;text-align:start;" text-indent="0px" text-transform="none" white-space="normal" word-spacing="0px">
+    </font>
+
+    <p class="font-claude-response-body break-words whitespace-normal leading-[1.7]" font-style="normal" letter-spacing="normal" style="color:rgb(255, 255, 255);font-weight:400;text-align:start;" text-indent="0px" text-transform="none" white-space="normal" word-spacing="0px">
+      <strong><span bgcolor="#ffffff" style="background-color:#ffffff;"><font style="color:#000000;">UC-02 
+      - View dashboard</font></span></strong><span bgcolor="#ffffff" style="background-color:#ffffff;"><font style="color:#000000;">&nbsp;Upon 
+      login, Sarah lands on the manager dashboard. The system queries the&nbsp;<code class="bg-text-200/5 border border-0.5 border-border-300 text-danger-000 whitespace-pre-wrap rounded-[0.4rem] px-1 py-px text-[0.9rem]">SALES</code>,&nbsp;<code class="bg-text-200/5 border border-0.5 border-border-300 text-danger-000 whitespace-pre-wrap rounded-[0.4rem] px-1 py-px text-[0.9rem]">PRODUCTS</code>, 
+      and&nbsp;<code class="bg-text-200/5 border border-0.5 border-border-300 text-danger-000 whitespace-pre-wrap rounded-[0.4rem] px-1 py-px text-[0.9rem]">INVENTORY_LOG</code>&nbsp;tables 
+      to display key metrics: total revenue this week, top-selling products, 
+      and current low-stock alerts. She notices that the &quot;Dark Blue Hoodie 
+      (Size M)&quot; has fallen below its&nbsp;<code class="bg-text-200/5 border border-0.5 border-border-300 text-danger-000 whitespace-pre-wrap rounded-[0.4rem] px-1 py-px text-[0.9rem]">reorder_level</code>&nbsp;of 
+      25 units. </font></span>
+    </p>
+    <font style="color:#000000;"><hr class="border-border-200 border-t-0.5 my-3 mx-1.5" font-style="normal" letter-spacing="normal" style="background-color:#ffffff;color:#000000;font-weight:400;text-align:start;" text-indent="0px" text-transform="none" white-space="normal" word-spacing="0px">
+    </font>
+
+    <p class="font-claude-response-body break-words whitespace-normal leading-[1.7]" font-style="normal" letter-spacing="normal" style="color:rgb(255, 255, 255);font-weight:400;text-align:start;" text-indent="0px" text-transform="none" white-space="normal" word-spacing="0px">
+      <strong><span bgcolor="#ffffff" style="background-color:#ffffff;"><font style="color:#000000;">MUC-01 
+      - Manage suppliers</font></span></strong><span bgcolor="#ffffff" style="background-color:#ffffff;"><font style="color:#000000;">&nbsp;Sarah 
+      navigates to the Suppliers module. The system retrieves all records from 
+      the&nbsp;<code class="bg-text-200/5 border border-0.5 border-border-300 text-danger-000 whitespace-pre-wrap rounded-[0.4rem] px-1 py-px text-[0.9rem]">SUPPLIERS</code>&nbsp;table. 
+      She identifies that the responsible supplier for hoodies is&nbsp;<em>Sakura 
+      Textiles Co.</em>&nbsp;(<code class="bg-text-200/5 border border-0.5 border-border-300 text-danger-000 whitespace-pre-wrap rounded-[0.4rem] px-1 py-px text-[0.9rem]">supplier_id 
+      = 1</code>, Japan). She reviews their contact details -&nbsp;<code class="bg-text-200/5 border border-0.5 border-border-300 text-danger-000 whitespace-pre-wrap rounded-[0.4rem] px-1 py-px text-[0.9rem]">kenji.yamamoto@sakuratextiles.jp</code>&nbsp;- 
+      and notes the last production order placed with them. </font></span>
+    </p>
+    <font style="color:#000000;"><hr class="border-border-200 border-t-0.5 my-3 mx-1.5" font-style="normal" letter-spacing="normal" style="background-color:#ffffff;color:#000000;font-weight:400;text-align:start;" text-indent="0px" text-transform="none" white-space="normal" word-spacing="0px">
+    </font>
+
+    <p class="font-claude-response-body break-words whitespace-normal leading-[1.7]" font-style="normal" letter-spacing="normal" style="color:rgb(255, 255, 255);font-weight:400;text-align:start;" text-indent="0px" text-transform="none" white-space="normal" word-spacing="0px">
+      <strong><span bgcolor="#ffffff" style="background-color:#ffffff;"><font style="color:#000000;">MUC-02 
+      - Manage factories</font></span></strong><span bgcolor="#ffffff" style="background-color:#ffffff;"><font style="color:#000000;">&nbsp;Sarah 
+      cross-references the&nbsp;<code class="bg-text-200/5 border border-0.5 border-border-300 text-danger-000 whitespace-pre-wrap rounded-[0.4rem] px-1 py-px text-[0.9rem]">FACTORIES</code>&nbsp;table 
+      and confirms that&nbsp;<em>Sakura Stitch Factory</em>&nbsp;in Osaka, Japan (<code class="bg-text-200/5 border border-0.5 border-border-300 text-danger-000 whitespace-pre-wrap rounded-[0.4rem] px-1 py-px text-[0.9rem]">factory_id 
+      = 1</code>) is linked to Sakura Textiles. She checks its current active 
+      production orders via the&nbsp;<code class="bg-text-200/5 border border-0.5 border-border-300 text-danger-000 whitespace-pre-wrap rounded-[0.4rem] px-1 py-px text-[0.9rem]">PRODUCTION_ORDERS</code>&nbsp;table 
+      and sees two orders with status &quot;In Progress.&quot; </font></span>
+    </p>
+    <font style="color:#000000;"><hr class="border-border-200 border-t-0.5 my-3 mx-1.5" font-style="normal" letter-spacing="normal" style="background-color:#ffffff;color:#000000;font-weight:400;text-align:start;" text-indent="0px" text-transform="none" white-space="normal" word-spacing="0px">
+    </font>
+
+    <p class="font-claude-response-body break-words whitespace-normal leading-[1.7]" font-style="normal" letter-spacing="normal" style="color:rgb(255, 255, 255);font-weight:400;text-align:start;" text-indent="0px" text-transform="none" white-space="normal" word-spacing="0px">
+      <strong><span bgcolor="#ffffff" style="background-color:#ffffff;"><font style="color:#000000;">MUC-03 
+      - Create production order</font></span></strong><span bgcolor="#ffffff" style="background-color:#ffffff;"><font style="color:#000000;">&nbsp;Sarah 
+      creates a new production order for 200 units of the Dark Blue Hoodie. 
+      The system inserts a new record into the&nbsp;<code class="bg-text-200/5 border border-0.5 border-border-300 text-danger-000 whitespace-pre-wrap rounded-[0.4rem] px-1 py-px text-[0.9rem]">PRODUCTION_ORDERS</code>&nbsp;table, 
+      referencing&nbsp;<code class="bg-text-200/5 border border-0.5 border-border-300 text-danger-000 whitespace-pre-wrap rounded-[0.4rem] px-1 py-px text-[0.9rem]">product_id</code>&nbsp;from&nbsp;<code class="bg-text-200/5 border border-0.5 border-border-300 text-danger-000 whitespace-pre-wrap rounded-[0.4rem] px-1 py-px text-[0.9rem]">PRODUCTS</code>&nbsp;and&nbsp;<code class="bg-text-200/5 border border-0.5 border-border-300 text-danger-000 whitespace-pre-wrap rounded-[0.4rem] px-1 py-px text-[0.9rem]">factory_id 
+      = 1</code>. The order status is set to &quot;Pending&quot; and start/end dates are 
+      assigned. </font></span>
+    </p>
+    <font style="color:#000000;"><hr class="border-border-200 border-t-0.5 my-3 mx-1.5" font-style="normal" letter-spacing="normal" style="background-color:#ffffff;color:#000000;font-weight:400;text-align:start;" text-indent="0px" text-transform="none" white-space="normal" word-spacing="0px">
+    </font>
+
+    <p class="font-claude-response-body break-words whitespace-normal leading-[1.7]" font-style="normal" letter-spacing="normal" style="color:rgb(255, 255, 255);font-weight:400;text-align:start;" text-indent="0px" text-transform="none" white-space="normal" word-spacing="0px">
+      <strong><span bgcolor="#ffffff" style="background-color:#ffffff;"><font style="color:#000000;">MUC-04 
+      - Notify supplier (automated email)</font></span></strong><span bgcolor="#ffffff" style="background-color:#ffffff;"><font style="color:#000000;">&nbsp;The 
+      system detects the new production order and triggers an automated 
+      notification email to&nbsp;<code class="bg-text-200/5 border border-0.5 border-border-300 text-danger-000 whitespace-pre-wrap rounded-[0.4rem] px-1 py-px text-[0.9rem]">kenji.yamamoto@sakuratextiles.jp</code>. 
+      The email includes order details: product SKU (<code class="bg-text-200/5 border border-0.5 border-border-300 text-danger-000 whitespace-pre-wrap rounded-[0.4rem] px-1 py-px text-[0.9rem]">GIQ-XXXX</code>), 
+      quantity (200 units), colour (Dark Blue), size (M), and the required 
+      delivery date. This closes the loop between the&nbsp;<code class="bg-text-200/5 border border-0.5 border-border-300 text-danger-000 whitespace-pre-wrap rounded-[0.4rem] px-1 py-px text-[0.9rem]">PRODUCTION_ORDERS</code>&nbsp;and&nbsp;<code class="bg-text-200/5 border border-0.5 border-border-300 text-danger-000 whitespace-pre-wrap rounded-[0.4rem] px-1 py-px text-[0.9rem]">SUPPLIERS</code>&nbsp;tables. 
+      </font></span>
+    </p>
+    <font style="color:#000000;"><hr class="border-border-200 border-t-0.5 my-3 mx-1.5" font-style="normal" letter-spacing="normal" style="background-color:#ffffff;color:#000000;font-weight:400;text-align:start;" text-indent="0px" text-transform="none" white-space="normal" word-spacing="0px">
+    </font>
+
+    <p class="font-claude-response-body break-words whitespace-normal leading-[1.7]" font-style="normal" letter-spacing="normal" style="color:rgb(255, 255, 255);font-weight:400;text-align:start;" text-indent="0px" text-transform="none" white-space="normal" word-spacing="0px">
+      <strong><span bgcolor="#ffffff" style="background-color:#ffffff;"><font style="color:#000000;">SUC-01 
+      - Manage inventory (Staff perspective)</font></span></strong><span bgcolor="#ffffff" style="background-color:#ffffff;"><font style="color:#000000;">&nbsp;Meanwhile, 
+      Staff member John Doe (<code class="bg-text-200/5 border border-0.5 border-border-300 text-danger-000 whitespace-pre-wrap rounded-[0.4rem] px-1 py-px text-[0.9rem]">johndoe@gmail.com</code>,&nbsp;<code class="bg-text-200/5 border border-0.5 border-border-300 text-danger-000 whitespace-pre-wrap rounded-[0.4rem] px-1 py-px text-[0.9rem]">role_id 
+      = 3</code>) logs in. He accesses the Inventory module and updates the 
+      stock count for three products - adjusting quantities in the&nbsp;<code class="bg-text-200/5 border border-0.5 border-border-300 text-danger-000 whitespace-pre-wrap rounded-[0.4rem] px-1 py-px text-[0.9rem]">PRODUCTS</code>&nbsp;table 
+      (<code class="bg-text-200/5 border border-0.5 border-border-300 text-danger-000 whitespace-pre-wrap rounded-[0.4rem] px-1 py-px text-[0.9rem]">stock_quantity</code>&nbsp;field). 
+      Each change is automatically written to the&nbsp;<code class="bg-text-200/5 border border-0.5 border-border-300 text-danger-000 whitespace-pre-wrap rounded-[0.4rem] px-1 py-px text-[0.9rem]">INVENTORY_LOG</code>&nbsp;table 
+      with&nbsp;<code class="bg-text-200/5 border border-0.5 border-border-300 text-danger-000 whitespace-pre-wrap rounded-[0.4rem] px-1 py-px text-[0.9rem]">change_type 
+      = ADJUSTMENT</code>, recording&nbsp;<code class="bg-text-200/5 border border-0.5 border-border-300 text-danger-000 whitespace-pre-wrap rounded-[0.4rem] px-1 py-px text-[0.9rem]">stock_before</code>,&nbsp;<code class="bg-text-200/5 border border-0.5 border-border-300 text-danger-000 whitespace-pre-wrap rounded-[0.4rem] px-1 py-px text-[0.9rem]">stock_after</code>, 
+      the&nbsp;<code class="bg-text-200/5 border border-0.5 border-border-300 text-danger-000 whitespace-pre-wrap rounded-[0.4rem] px-1 py-px text-[0.9rem]">user_id</code>, 
+      and a timestamp. </font></span>
+    </p>
+    <font style="color:#000000;"><hr class="border-border-200 border-t-0.5 my-3 mx-1.5" font-style="normal" letter-spacing="normal" style="background-color:#ffffff;color:#000000;font-weight:400;text-align:start;" text-indent="0px" text-transform="none" white-space="normal" word-spacing="0px">
+    </font>
+
+    <p class="font-claude-response-body break-words whitespace-normal leading-[1.7]" font-style="normal" letter-spacing="normal" style="color:rgb(255, 255, 255);font-weight:400;text-align:start;" text-indent="0px" text-transform="none" white-space="normal" word-spacing="0px">
+      <strong><span bgcolor="#ffffff" style="background-color:#ffffff;"><font style="color:#000000;">SUC-02 
+      - Record sale</font></span></strong><span bgcolor="#ffffff" style="background-color:#ffffff;"><font style="color:#000000;">&nbsp;A 
+      customer,&nbsp;<em>Ella Brown</em>&nbsp;(<code class="bg-text-200/5 border border-0.5 border-border-300 text-danger-000 whitespace-pre-wrap rounded-[0.4rem] px-1 py-px text-[0.9rem]">cstm26-0042</code>), 
+      purchases a Blood Red T-Shirt (Size S). John records the sale - the 
+      system inserts into the&nbsp;<code class="bg-text-200/5 border border-0.5 border-border-300 text-danger-000 whitespace-pre-wrap rounded-[0.4rem] px-1 py-px text-[0.9rem]">SALES</code>&nbsp;table 
+      referencing&nbsp;<code class="bg-text-200/5 border border-0.5 border-border-300 text-danger-000 whitespace-pre-wrap rounded-[0.4rem] px-1 py-px text-[0.9rem]">product_id</code>,&nbsp;<code class="bg-text-200/5 border border-0.5 border-border-300 text-danger-000 whitespace-pre-wrap rounded-[0.4rem] px-1 py-px text-[0.9rem]">customer_id 
+      = cstm26-0042</code>, and&nbsp;<code class="bg-text-200/5 border border-0.5 border-border-300 text-danger-000 whitespace-pre-wrap rounded-[0.4rem] px-1 py-px text-[0.9rem]">user_id</code>&nbsp;of 
+      John. The&nbsp;<code class="bg-text-200/5 border border-0.5 border-border-300 text-danger-000 whitespace-pre-wrap rounded-[0.4rem] px-1 py-px text-[0.9rem]">stock_quantity</code>&nbsp;in&nbsp;<code class="bg-text-200/5 border border-0.5 border-border-300 text-danger-000 whitespace-pre-wrap rounded-[0.4rem] px-1 py-px text-[0.9rem]">PRODUCTS</code>&nbsp;decreases 
+      by 1, and a new&nbsp;<code class="bg-text-200/5 border border-0.5 border-border-300 text-danger-000 whitespace-pre-wrap rounded-[0.4rem] px-1 py-px text-[0.9rem]">INVENTORY_LOG</code>&nbsp;entry 
+      is created with&nbsp;<code class="bg-text-200/5 border border-0.5 border-border-300 text-danger-000 whitespace-pre-wrap rounded-[0.4rem] px-1 py-px text-[0.9rem]">change_type 
+      = SALE</code>. </font></span>
+    </p>
+    <font style="color:#000000;"><hr class="border-border-200 border-t-0.5 my-3 mx-1.5" font-style="normal" letter-spacing="normal" style="background-color:#ffffff;color:#000000;font-weight:400;text-align:start;" text-indent="0px" text-transform="none" white-space="normal" word-spacing="0px">
+    </font>
+
+    <p class="font-claude-response-body break-words whitespace-normal leading-[1.7]" font-style="normal" letter-spacing="normal" style="color:rgb(255, 255, 255);font-weight:400;text-align:start;" text-indent="0px" text-transform="none" white-space="normal" word-spacing="0px">
+      <strong><span bgcolor="#ffffff" style="background-color:#ffffff;"><font style="color:#000000;">SUC-03 
+      - Manage customers</font></span></strong><span bgcolor="#ffffff" style="background-color:#ffffff;"><font style="color:#000000;">&nbsp;The 
+      system detects that&nbsp;<code class="bg-text-200/5 border border-0.5 border-border-300 text-danger-000 whitespace-pre-wrap rounded-[0.4rem] px-1 py-px text-[0.9rem]">cstm26-0042</code>&nbsp;is 
+      a returning customer (already exists in&nbsp;<code class="bg-text-200/5 border border-0.5 border-border-300 text-danger-000 whitespace-pre-wrap rounded-[0.4rem] px-1 py-px text-[0.9rem]">CUSTOMERS 
+      </code>table). John can view Ella's purchase history, address, and 
+      email. If it were a new customer, John would create a new record in&nbsp;<code class="bg-text-200/5 border border-0.5 border-border-300 text-danger-000 whitespace-pre-wrap rounded-[0.4rem] px-1 py-px text-[0.9rem]">CUSTOMERS</code>&nbsp;with 
+      a new&nbsp;<code class="bg-text-200/5 border border-0.5 border-border-300 text-danger-000 whitespace-pre-wrap rounded-[0.4rem] px-1 py-px text-[0.9rem]">cstm26-XXXX</code>&nbsp;ID. 
+      </font></span>
+    </p>
+    <font style="color:#000000;"><hr class="border-border-200 border-t-0.5 my-3 mx-1.5" font-style="normal" letter-spacing="normal" style="background-color:#ffffff;color:#000000;font-weight:400;text-align:start;" text-indent="0px" text-transform="none" white-space="normal" word-spacing="0px">
+    </font>
+
+    <p class="font-claude-response-body break-words whitespace-normal leading-[1.7]" font-style="normal" letter-spacing="normal" style="color:rgb(255, 255, 255);font-weight:400;text-align:start;" text-indent="0px" text-transform="none" white-space="normal" word-spacing="0px">
+      <strong><span bgcolor="#ffffff" style="background-color:#ffffff;"><font style="color:#000000;">AUC-01 
+      - View reports &amp; analytics (Analyst perspective)</font></span></strong><span bgcolor="#ffffff" style="background-color:#ffffff;"><font style="color:#000000;">&nbsp;Analyst 
+      James Nguyen logs in and accesses the analytics module. He exports data 
+      from&nbsp;<code class="bg-text-200/5 border border-0.5 border-border-300 text-danger-000 whitespace-pre-wrap rounded-[0.4rem] px-1 py-px text-[0.9rem]">SALES</code>,&nbsp;<code class="bg-text-200/5 border border-0.5 border-border-300 text-danger-000 whitespace-pre-wrap rounded-[0.4rem] px-1 py-px text-[0.9rem]">PRODUCTS</code>,&nbsp;<code class="bg-text-200/5 border border-0.5 border-border-300 text-danger-000 whitespace-pre-wrap rounded-[0.4rem] px-1 py-px text-[0.9rem]">CUSTOMERS</code>, 
+      and&nbsp;<code class="bg-text-200/5 border border-0.5 border-border-300 text-danger-000 whitespace-pre-wrap rounded-[0.4rem] px-1 py-px text-[0.9rem]">INVENTORY_LOG</code>&nbsp;to 
+      Excel. He loads it into Power BI and builds dashboards showing monthly 
+      revenue trends by category, top customers by spend, and factory 
+      production efficiency vs. orders placed.</font></span>
+    </p>
+  </body>
