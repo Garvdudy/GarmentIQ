@@ -32,12 +32,8 @@ GarmentIQ bridges the gap between **operational systems** and **analytics platfo
 ---
 
 ## Status
-- **Current:** Requirements Gathering complete
-- **Next Steps:** Project Proposal --> System Design --> Development --> Power BI Analysis --> Final Report & Demo
+- Requirements Gathering - Completed
+- Project Proposal - Completed
+- Weekly Progress Report(1) - Completed
 
 ---
-
-## Getting Started
-1. Clone the repo:  
-```bash
-git clone https://github.com/<your-username>/GarmentIQ.git
