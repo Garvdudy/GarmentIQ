@@ -1,0 +1,101 @@
+product_id,category_id,supplier_id,product_name,sku,size,color,unit_price,stock_quantity,reorder_level,created_at
+1,1,1,Womens Pants,GIQ-0001,XL,Black,$66.33,74,16,2023-12-08
+2,1,3,Womens Pants,GIQ-0002,M,Navy,$56.82,88,8,2023-01-04
+3,1,2,Womens Pants,GIQ-0003,M,White,$67.06,3,12,2023-05-29
+4,1,3,Womens Pants,GIQ-0004,S,Black,$59.80,67,10,2023-03-08
+5,1,4,Womens Pants,GIQ-0005,S,White,$76.30,83,18,2024-02-17
+6,1,3,Womens Pants,GIQ-0006,S,Navy,$57.88,17,14,2023-01-10
+7,1,4,Womens Pants,GIQ-0007,M,Black,$91.85,85,14,2023-10-21
+8,1,4,Womens Pants,GIQ-0008,L,Navy,$83.38,26,14,2023-01-11
+9,2,5,Womens Shirts,GIQ-0009,M,White,$47.75,55,11,2023-06-20
+10,2,2,Womens Shirts,GIQ-0010,XL,White,$47.67,79,16,2023-04-10
+11,2,3,Womens Shirts,GIQ-0011,L,Navy,$57.29,30,11,2023-02-22
+12,2,2,Womens Shirts,GIQ-0012,S,White,$53.96,3,9,2023-04-01
+13,2,4,Womens Shirts,GIQ-0013,L,Black,$61.24,86,15,2023-12-15
+14,2,5,Womens Shirts,GIQ-0014,M,Black,$67.50,53,18,2023-06-11
+15,2,2,Womens Shirts,GIQ-0015,S,Black,$60.39,50,12,2023-10-30
+16,2,1,Womens Shirts,GIQ-0016,XL,Navy,$57.32,0,15,2023-08-20
+17,3,4,Womens Office Wear One Piece,GIQ-0017,M,Black,$99.02,17,15,2024-04-10
+18,3,5,Womens Office Wear One Piece,GIQ-0018,S,White,$102.59,72,16,2023-03-19
+19,3,1,Womens Office Wear One Piece,GIQ-0019,M,Navy,$92.53,55,9,2023-09-16
+20,3,2,Womens Office Wear One Piece,GIQ-0020,M,White,$71.96,68,16,2023-09-25
+21,3,5,Womens Office Wear One Piece,GIQ-0021,L,White,$77.94,48,14,2023-07-29
+22,3,3,Womens Office Wear One Piece,GIQ-0022,L,Black,$103.94,0,13,2023-02-03
+23,4,3,Womens Top,GIQ-0023,L,Blue,$32.45,56,12,2024-05-10
+24,4,4,Womens Top,GIQ-0024,S,Blue,$33.87,22,12,2023-10-14
+25,4,4,Womens Top,GIQ-0025,L,Black,$49.30,28,18,2023-12-26
+26,4,5,Womens Top,GIQ-0026,S,Khaki,$32.80,77,13,2023-01-10
+27,4,3,Womens Top,GIQ-0027,M,Blue,$39.27,55,15,2023-04-09
+28,4,2,Womens Top,GIQ-0028,L,Khaki,$60.00,5,9,2023-09-17
+29,5,4,Uni-Sex Jacket (Denim),GIQ-0029,XL,Black,$77.40,42,15,2023-11-09
+30,5,3,Uni-Sex Jacket (Denim),GIQ-0030,L,Black,$116.38,41,16,2023-05-03
+31,5,3,Uni-Sex Jacket (Denim),GIQ-0031,XL,Blue,$128.11,36,13,2023-12-14
+32,5,5,Uni-Sex Jacket (Denim),GIQ-0032,L,Blue,$129.14,48,14,2023-09-15
+33,5,5,Uni-Sex Jacket (Denim),GIQ-0033,S,Black,$98.03,4,10,2024-03-22
+34,5,3,Uni-Sex Jacket (Denim),GIQ-0034,M,Blue,$77.87,59,16,2024-04-23
+35,5,1,Uni-Sex Jacket (Denim),GIQ-0035,M,Black,$114.13,27,12,2023-02-12
+36,5,2,Uni-Sex Jacket (Denim),GIQ-0036,S,Khaki,$90.00,30,14,2023-02-16
+37,6,1,Uni-Sex Jeans,GIQ-0037,XL,Blue,$65.00,0,9,2024-03-05
+38,6,3,Uni-Sex Jeans,GIQ-0038,S,Black,$81.66,5,15,2023-12-23
+39,6,2,Uni-Sex Jeans,GIQ-0039,XL,Black,$80.35,90,8,2024-04-08
+40,6,1,Uni-Sex Jeans,GIQ-0040,S,Khaki,$50.76,3,14,2023-02-26
+41,6,3,Uni-Sex Jeans,GIQ-0041,M,Black,$59.51,4,14,2023-11-24
+42,6,5,Uni-Sex Jeans,GIQ-0042,XL,Khaki,$68.28,8,8,2023-11-20
+43,6,5,Uni-Sex Jeans,GIQ-0043,L,Khaki,$73.00,49,14,2023-01-01
+44,6,5,Uni-Sex Jeans,GIQ-0044,L,Blue,$64.11,35,18,2023-12-09
+45,7,1,Uni-Sex Hoodies,GIQ-0045,M,Grey,$59.28,0,11,2024-01-11
+46,7,1,Uni-Sex Hoodies,GIQ-0046,S,White,$75.86,54,10,2023-01-23
+47,7,3,Uni-Sex Hoodies,GIQ-0047,XL,Grey,$66.84,34,18,2023-08-26
+48,7,4,Uni-Sex Hoodies,GIQ-0048,XL,Black,$70.27,20,15,2023-01-19
+49,7,3,Uni-Sex Hoodies,GIQ-0049,L,Grey,$53.06,17,13,2024-04-22
+50,7,3,Uni-Sex Hoodies,GIQ-0050,L,Black,$65.62,81,15,2023-05-10
+51,7,1,Uni-Sex Hoodies,GIQ-0051,M,Black,$75.13,6,8,2024-03-19
+52,7,3,Uni-Sex Hoodies,GIQ-0052,S,Black,$55.93,67,14,2024-01-16
+53,8,1,Uni-Sex Joggers,GIQ-0053,XL,Grey,$52.92,35,16,2023-05-31
+54,8,3,Uni-Sex Joggers,GIQ-0054,S,Grey,$43.08,49,12,2023-08-17
+55,8,5,Uni-Sex Joggers,GIQ-0055,S,Black,$61.53,8,13,2023-08-17
+56,8,1,Uni-Sex Joggers,GIQ-0056,M,Grey,$61.80,90,14,2023-05-21
+57,8,1,Uni-Sex Joggers,GIQ-0057,L,White,$42.25,58,16,2024-02-15
+58,8,2,Uni-Sex Joggers,GIQ-0058,M,Black,$68.58,8,8,2023-03-06
+59,8,1,Uni-Sex Joggers,GIQ-0059,XL,Black,$47.08,58,14,2024-05-01
+60,8,5,Uni-Sex Joggers,GIQ-0060,XL,White,$40.97,8,13,2023-07-10
+61,9,2,Uni-Sex T-Shirts,GIQ-0061,L,Black,$33.48,83,9,2023-05-15
+62,9,3,Uni-Sex T-Shirts,GIQ-0062,M,Grey,$38.19,5,15,2023-04-13
+63,9,1,Uni-Sex T-Shirts,GIQ-0063,S,Black,$25.12,0,10,2024-04-05
+64,9,4,Uni-Sex T-Shirts,GIQ-0064,XL,Grey,$44.94,52,18,2023-06-27
+65,9,1,Uni-Sex T-Shirts,GIQ-0065,XL,White,$34.65,50,10,2023-12-31
+66,9,2,Uni-Sex T-Shirts,GIQ-0066,L,White,$40.26,27,11,2024-02-10
+67,10,5,Uni-Sex Sweatshirts,GIQ-0067,S,Grey,$70.95,0,14,2024-01-03
+68,10,4,Uni-Sex Sweatshirts,GIQ-0068,L,White,$58.40,85,9,2023-03-06
+69,10,3,Uni-Sex Sweatshirts,GIQ-0069,XL,Black,$62.48,78,13,2023-03-07
+70,10,5,Uni-Sex Sweatshirts,GIQ-0070,XL,Grey,$62.39,3,14,2023-09-15
+71,10,1,Uni-Sex Sweatshirts,GIQ-0071,XL,White,$69.10,50,10,2023-03-24
+72,10,3,Uni-Sex Sweatshirts,GIQ-0072,L,Black,$72.72,78,12,2024-03-09
+73,11,5,Uni-Sex Full-Sleeve T-Shirts,GIQ-0073,L,Black,$48.72,6,8,2024-02-27
+74,11,1,Uni-Sex Full-Sleeve T-Shirts,GIQ-0074,XL,Black,$29.79,85,12,2023-11-30
+75,11,2,Uni-Sex Full-Sleeve T-Shirts,GIQ-0075,L,Grey,$44.87,15,15,2024-03-31
+76,11,5,Uni-Sex Full-Sleeve T-Shirts,GIQ-0076,S,Black,$34.37,73,11,2024-02-17
+77,11,4,Uni-Sex Full-Sleeve T-Shirts,GIQ-0077,S,White,$34.54,0,8,2023-03-22
+78,11,4,Uni-Sex Full-Sleeve T-Shirts,GIQ-0078,M,White,$37.14,55,17,2023-03-15
+79,12,4,Mens Pants,GIQ-0079,XL,Black,$59.90,30,9,2023-01-26
+80,12,3,Mens Pants,GIQ-0080,M,Black,$92.82,65,11,2024-05-07
+81,12,2,Mens Pants,GIQ-0081,S,Blue,$87.54,52,11,2024-01-26
+82,12,2,Mens Pants,GIQ-0082,S,Black,$74.93,75,12,2023-09-12
+83,12,1,Mens Pants,GIQ-0083,M,Blue,$58.60,70,11,2023-04-21
+84,12,5,Mens Pants,GIQ-0084,L,Blue,$69.12,0,15,2023-11-02
+85,12,4,Mens Pants,GIQ-0085,L,Grey,$66.43,0,9,2023-08-09
+86,12,2,Mens Pants,GIQ-0086,S,Grey,$90.30,63,13,2023-01-24
+87,13,5,Mens Shirts,GIQ-0087,L,Blue,$54.79,90,9,2023-03-07
+88,13,1,Mens Shirts,GIQ-0088,M,Grey,$58.79,55,16,2024-04-25
+89,13,3,Mens Shirts,GIQ-0089,S,Blue,$71.42,7,8,2023-01-24
+90,13,1,Mens Shirts,GIQ-0090,XL,Blue,$49.80,72,16,2023-08-22
+91,13,2,Mens Shirts,GIQ-0091,XL,Grey,$66.22,53,17,2023-06-13
+92,13,2,Mens Shirts,GIQ-0092,M,Blue,$58.75,50,17,2023-06-22
+93,13,5,Mens Shirts,GIQ-0093,S,Grey,$73.99,84,12,2023-09-01
+94,13,1,Mens Shirts,GIQ-0094,M,Black,$57.89,65,17,2023-06-07
+95,14,5,Mens Office Jacket,GIQ-0095,L,Black,$113.83,60,10,2024-02-25
+96,14,2,Mens Office Jacket,GIQ-0096,XL,Grey,$86.89,26,11,2023-01-10
+97,14,4,Mens Office Jacket,GIQ-0097,XL,Black,$103.82,4,14,2023-09-14
+98,14,5,Mens Office Jacket,GIQ-0098,M,Blue,$140.23,19,10,2023-09-23
+99,14,2,Mens Office Jacket,GIQ-0099,L,Blue,$118.65,73,16,2023-07-12
+100,14,3,Mens Office Jacket,GIQ-0100,L,Grey,$142.40,80,13,2023-10-07
