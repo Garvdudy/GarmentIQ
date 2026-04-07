@@ -247,38 +247,125 @@ from product_category_sales
 order by gender, type, subtype, category_rank;
 
 -- Qry5 - Month growth in revenue (shows whether revenue is increasing or declining over time)
-with monthly_sales as (
+-- Tried Multible with Temprory Tables for best practice
+with monthly_sales_tem_T1 as (
 	select
 		year(sale_date) as sales_year,
         month(sale_date) as sales_month,
         round(sum(total_amount), 2) as monthly_revenue
 	from sales
     group by year(sale_date), month(sale_date)
+),
+monthly_with_previous_tem_T2 as (
+	select
+		sales_year,
+        sales_month,
+        monthly_revenue,
+        lag(monthly_revenue) over (order by sales_year, sales_month) as previous_month_revenue
+	from monthly_sales_tem_T1
+),
+ monthly_with_revenue_diff_tem_T3 as (
+	select
+		sales_year,
+        sales_month,
+        monthly_revenue,
+        previous_month_revenue,
+        round(monthly_revenue - previous_month_revenue,2) as revenue_difference
+	from monthly_with_previous_tem_T2
 )
 select
 	sales_year,
     sales_month,
     monthly_revenue,
-    lag(monthly_revenue) over ( order by sales_year, sales_month) as previous_month_revenue,
-    round(monthly_revenue - lag(monthly_revenue) over (order by sales_year, sales_month),2) as revenue_difference
-from monthly_sales
+    previous_month_revenue,
+    revenue_difference
+from monthly_with_revenue_diff_tem_T3
 order by sales_year, sales_month;
 
+-- Qry6 - Revenue Share by payment method (useful for payment preference analysis and checkout optimization.)
+with payment_revenue as (
+	select
+		payment_method,
+        round(sum(total_amount), 2) as total_payment_revenue
+	from sales
+    group by payment_method
+),
+overall_revenue as (
+	select
+		round(sum(total_amount), 2) as company_revenue
+	from sales
+)
+select
+	pr.payment_method,
+    pr.total_payment_revenue,
+    round((pr.total_payment_revenue / o.company_revenue) * 100, 2) as revenue_percent
+from payment_revenue pr
+cross join overall_revenue o
+order by pr.total_payment_revenue desc;
 
+-- Qry7 - Stock VS sales efficiency by product (Helps identify fast moves, slow movers, and stock imbalance.)
+with product_sales as (
+	select
+		p.product_id,
+        p.product_name,
+        p.sku,
+        p.stock_quantity,
+        coalesce(sum(s.quantity_sold), 0) as total_units_sold
+        from products p
+        left join sales s
+			on p.product_id = s.product_id
+		group by p.product_id, p.product_name, p.sku, p.stock_quantity
+)
+select
+	product_id,
+    product_name,
+    sku,
+    stock_quantity,
+    total_units_sold,
+    round(
+		case
+			when stock_quantity = 0 then null
+            else total_units_sold / stock_quantity
+		end,
+        2
+	) as sales_to_stock_ratio
+from product_sales
+order by sales_to_stock_ratio desc, total_units_sold desc;
 
+-- Qry8 - Top city by month (greate for location trend analysis and regional performancee tracking.)
+with city_month_sales as (
+	select
+		year(s.sale_date) as sales_year,
+        month(s.sale_date) as sales_month,
+        c.city,
+        round(sum(s.total_amount), 2) as city_revenue
+	from sales s
+    join customers c
+		on s.customer_id = c.customer_id
+	group by year(s.sale_date),month(s.sale_date), c.city
+),
+ranked_city_sales as (
+	select
+		sales_year,
+        sales_month,
+        city,
+        city_revenue,
+        rank() over (
+			partition by sales_year, sales_month 
+            order by city_revenue desc
+        ) as city_rank
+	from city_month_sales
+)
+select
+	sales_year,
+    sales_month,
+    city,
+    city_revenue
+from ranked_city_sales
+where city_rank = 1
+order by sales_year, sales_month;
 
-
-
-
-
-
-
-
-
-
-
-
-
+-- Done Till Advanced SQL Analysis for Business
 
 
 
