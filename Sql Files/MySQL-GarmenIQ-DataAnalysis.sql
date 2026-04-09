@@ -365,7 +365,172 @@ from ranked_city_sales
 where city_rank = 1
 order by sales_year, sales_month;
 
--- Done Till Advanced SQL Analysis for Business
+
+
+
+-- LEVEL5: EXPERT [Goal: Nested Subqueries, Correlated subqueries, complex joins (multi-level), business KPIs, .....]
+-- Qry1 - Customer segmentation by spending (Useful for target marketing and customer retention strategy.)
+with customer_spend as (
+	select
+		c.customer_id,
+        c.full_name,
+        c.city,
+        round(sum(s.total_amount), 2) as total_spent
+	from sales s
+    join customers c
+		on s.customer_id = c.customer_id
+	group by c.customer_id, c.full_name, c.city
+)
+select
+	customer_id,
+    full_name,
+    city,
+    total_spent,
+    case
+		when total_spent >= 300 then 'High Spender'
+        when total_spent >= 150 then 'Mdium Spender'
+        else 'Low Spender'
+	end as customer_segment
+from customer_spend
+order by total_spent desc;
+
+-- Qry2 - Repeat vs one-time customers (Help measure retention and customer loyalty.)
+with customer_orders as (
+	select
+		customer_id,
+        count(*) as transaction_count
+	from sales
+    group by customer_id
+)
+select
+	case
+		when transaction_count = 1 then 'One-Time Customer'
+        else 'Repeate Customer'
+	end as customer_type,
+    count(*) as total_customers
+from customer_orders
+group by
+	case
+		when transaction_count = 1 then 'One-Time Customer'
+        else 'Repeate Customer'
+	end;
+
+-- Qry3 - Products performing above average revenue (useful for identifying strong products worth promoting)
+with product_revenue as (
+	select
+		p.product_id,
+        p.product_name,
+        p.sku,
+        round(sum(s.total_amount), 2) as total_revenue
+	from sales s
+    join products p
+		on s.product_id = p.product_id
+	group by p.product_id, p.product_name, p.sku
+)
+select
+	product_id,
+    product_name,
+    sku,
+    total_revenue
+from product_revenue
+where total_revenue > (
+	select avg(total_revenue)
+    from product_revenue
+)
+order by total_revenue desc;
+
+-- Qry4 - Suppliers performance by revenue(useful for vendor evaluation and sourcing strategy)
+select
+	sp.supplier_id,
+    sp.supplier_name,
+    count(distinct p.product_id) as total_products,
+    round(sum(s.total_amount), 2) as supplier_revenue
+from sales s
+join products p
+	on s.product_id = p.product_id
+join suppliers sp
+	on p.supplier_id = sp.supplier_id
+group by sp.supplier_id, sp.supplier_name
+order by supplier_revenue desc;
+
+-- Qry5 - Best-selling products in each city(shows local buying behavior and city-level product perference)
+with city_product_sales as (
+	select
+		c.city,
+        p.product_id,
+        p.product_name,
+        p.sku,
+        round(sum(s.total_amount), 2) as product_revenue
+	from sales s
+    join customers c
+		on s.customer_id = c.customer_id
+	join products p
+		on s.product_id = p.product_id
+	group by c.city, p.product_id, p.product_name, p.sku
+),
+ranked_city_product as (
+	select
+		city,
+        product_id,
+        product_name,
+        sku,
+        product_revenue,
+        rank() over ( partition by city order by product_revenue desc) as city_product_rank
+	from city_product_sales
+)
+select
+	city,
+	product_id,
+	product_name,
+	sku,
+	product_revenue
+from ranked_city_product
+where city_product_rank = 1
+order by city, product_revenue desc;
+
+-- Qry6 - Customer last purchase and recency (very useful for retention analysis and re-engagement campaigns.)
+select
+	c.customer_id,
+    c.full_name,
+    c.city,
+    count(s.sales_id) as total_transactions,
+    max(s.sale_date) as last_purchase_date,
+    datediff(curdate(), date(max(s.sale_date))) as days_since_last_purchase
+from customers c
+left join sales s
+	on c.customer_id = s.customer_id
+group by c.customer_id, c.full_name, c.city
+order by days_since_last_purchase asc, total_transactions desc;
+
+
+
+
+-- LEVEL6: ENGINEERING [Goal: Views, Stored procedures, triggers, indexing, reusable reporting logic, automation-style SQL.]
+-- Qry1 - Monthly sales summary pipeline query (Produces a report-ready monthly summary for analytics/dashboard usage.)
+select
+	year(sale_date) as sales_year,
+    month(sale_date) as sales_month,
+    count(*) as total_transactions,
+    sum(quantity_sold) as total_units_sold,
+    round(sum(total_amount), 2) as total_revenue,
+    round(avg(total_amount), 2) as avg_transaction_value
+from sales
+group by year(sale_date), month(sale_date)
+order by sales_year, sales_month;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
