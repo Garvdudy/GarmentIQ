@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GarmentIQ Portal Prototype</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="shell">
+      <aside class="sidebar">
+        <div class="brand">
+          <h1>GarmentIQ</h1>
+          <p>Smart Operations Portal</p>
+        </div>
+
+        <div class="role-switcher" id="role-switcher"></div>
+
+        <nav class="nav">
+          <div class="nav-group">
+            <button class="nav-link nav-link--active" type="button">Dashboard</button>
+          </div>
+
+          <div class="nav-group">
+            <p class="nav-label" id="nav-label">Manager Workspace</p>
+            <div id="nav-items"></div>
+          </div>
+        </nav>
+
+        <button class="logout-button" type="button">Sign Out</button>
+      </aside>
+
+      <main class="content">
+        <section class="hero-card">
+          <div>
+            <p class="eyebrow" id="page-kicker">Overview</p>
+            <h2 id="page-title">Dashboard</h2>
+            <p class="hero-copy" id="page-subtitle">Welcome back.</p>
+          </div>
+          <span class="role-pill" id="role-pill">Manager</span>
+        </section>
+
+        <section class="section-head">
+          <div>
+            <h3 id="section-title">Workspace Modules</h3>
+            <p id="section-copy">Choose a module to continue.</p>
+          </div>
+          <button class="primary-button" type="button" id="section-action">Create Record</button>
+        </section>
+
+        <section class="module-grid" id="module-grid"></section>
+
+        <section class="panel">
+          <div class="panel-header">
+            <div>
+              <p class="eyebrow">Module Preview</p>
+              <h3 id="table-title">Suppliers</h3>
+            </div>
+            <button class="secondary-button" type="button">Export View</button>
+          </div>
+
+          <div class="filters">
+            <label class="field">
+              <span>Search</span>
+              <input
+                type="text"
+                id="search-input"
+                placeholder="Search by name, contact, email, phone, or location"
+              />
+            </label>
+
+            <label class="field field--compact">
+              <span>Sort By</span>
+              <select id="sort-select">
+                <option value="name">Name (A-Z)</option>
+                <option value="country">Country</option>
+                <option value="contact">Contact</option>
+              </select>
+            </label>
+          </div>
+
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>Name</th>
+                  <th>Contact</th>
+                  <th>Email</th>
+                  <th>Phone</th>
+                  <th>Country</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody id="table-body"></tbody>
+            </table>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

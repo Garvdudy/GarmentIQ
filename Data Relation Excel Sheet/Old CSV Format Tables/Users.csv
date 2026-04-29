@@ -1,6 +1,0 @@
-user_id,role_id,full_name,email,username,password
-1,1,Sarah Mitchell,sarah.mitchell@garmentiq.com,sarah.manager,manager123
-2,2,James Walker,james.walker@garmentiq.com,james.staff,staff123
-3,2,Priya Sharma,priya.sharma@garmentiq.com,priya.staff,staff123
-4,3,Daniel Brooks,daniel.brooks@garmentiq.com,daniel.analyst,analyst123
-5,2,Emily Chen,emily.chen@garmentiq.com,emily.staff,staff123

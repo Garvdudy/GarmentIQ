@@ -1,0 +1,740 @@
+-- GarmentIQ Data Analysis Using MySQL
+
+
+
+
+-- LEVEL1: BASIC LEVEL [Goal: read data, count rows, simple totals, grouping.]
+-- Qry1 - good for showing dataset size, system activity
+select count(*) as total_sales_transaction
+from sales;
+
+
+-- Qry2 - Sales by payment method (shows how many sales were made by each payemnt method)
+select payment_method, count(*) as total_transaction from sales
+group by payment_method
+order by total_transaction;
+
+
+-- Qry3 - Order by Status (shows how many orders are completed, processing, or cancelled)
+select status, count(*) as total_orders
+from orders
+group by status
+order by total_orders desc;
+
+
+-- Qry4 - calculates total sales revenue from all sales.
+select round(sum(total_amount),2) as total_revenue
+from sales;
+
+
+
+
+
+-- LEVEL2: BEGINNER TO INTERMEDIATE [Goal: date analysis, monthly trends, city-based insights, top customers.]
+-- Qry1 - Monthly Sales Trend (shows monthly revenue and transaction count)
+select * from sales;
+select 
+	year(sale_date) as sales_year,
+    month(sale_date) as sales_month,
+    count(*) as total_transactions,
+    round(sum(total_amount),2) as monthly_revenue
+from sales
+group by year(sale_date), month(sale_date)
+order by sales_year, sales_month;
+
+
+-- Qry2 - Monthly Oorder Trend (shows how many orders were placed each month and their total values)
+select 
+	year(order_date) as order_year,
+    month(order_date) as order_month,
+    count(*) as total_orders,
+    round(sum(total_amount),2) as total_order_value
+from orders
+group by year(order_date), month(order_date)
+order by order_year, order_month;
+
+
+-- Qry3 - Sales by Customer City (joins sales and customers to show which city generated the most revenue)
+select 
+	c.city,
+    count(s.sales_id) as total_sales,
+    round(sum(s.total_amount), 2) as total_revenue
+from sales s 
+join customers c
+	on s.customer_id = c.customer_id
+group by c.city
+order by total_revenue desc;
+
+
+-- Qry 4 - Top 10 Customers by Spending (Finds the cusomters who spent the most overall)
+select
+	c.customer_id,
+    c.full_name,
+    c.city,
+    round(sum(s.total_amount), 2) as total_spent
+from sales s 
+join customers c
+	on s.customer_id = c.customer_id
+group by c.customer_id, c.full_name, c.city
+order by total_spent desc
+limit 10;
+
+
+-- Qry 5 - Top Selling Products (Finds which products sold the most by quantity and revenue)
+select 
+	p.product_id,
+    p.product_name,
+    p.sku,
+    sum(s.quantity_sold) as total_units_sold,
+	round(sum(s.total_amount), 2) as total_product_revenue
+from sales s 
+join products p
+	on s.product_id = p.product_id
+group by p.product_id, p.product_name, p.sku
+order by total_units_sold desc, total_product_revenue desc
+limit 10;
+
+
+
+
+
+-- LEVEL3: INTERMEDIATE [Goal: business logic, joins across multiple tables, stock analysis.]
+-- Qry1 - Low Stock Products (Useful for inventory monitoring and reorder decisions.)
+select 
+	product_id,
+    product_name,
+    sku,
+    stock_quantity,
+    unit_price
+from products
+where stock_quantity <= 5
+order by stock_quantity asc, product_name;
+
+
+-- Qry2 - Inventory value by product (Calculates invnetory value for each product)
+select 
+	product_id,
+    product_name,
+    sku,
+    stock_quantity,
+    unit_price,
+    round(stock_quantity * unit_price, 2) as inventory_value
+from products
+order by inventory_value desc;
+
+
+-- Qry3 - Inventory value by category (Shows how much unit stock & inventory value is held inside each category.)
+select
+	c.gender,
+    c.type,
+    c.subtype,
+    count(p.product_id) as total_products,
+    sum(p.stock_quantity) as total_units_in_stock,
+    round(sum(p.stock_quantity * p.unit_price), 2) as category_inventory_value
+from products p 
+join categories c
+	on p.category_id = c.category_id
+group by c.category_id, c.gender, c.type, c.subtype
+order by category_inventory_value desc;
+
+
+-- Qry4 - Supplier Contribution (Shows how many products supplier provides and total stock value tied to them.)
+select
+	s.supplier_name,
+    count(p.product_id) as total_products_supplied,
+    sum(p.stock_quantity) as total_units_supplied_per_product,
+    round(sum(p.stock_quantity * p.unit_price), 2) as supplier_inventory_value
+from suppliers s
+join products p
+	on s.supplier_id = p.supplier_id
+group by s.supplier_id, s.supplier_name
+order by supplier_inventory_value desc;
+
+
+-- Qry5 - Staff Handling most sales (Shows which internal users handle the most sales.)
+select
+	r.role_name,
+	u.user_id,
+    u.full_name,
+    count(s.sales_id) as total_sales_handled,
+    round(sum(s.total_amount), 2) as total_sales_value
+from sales s
+join users u
+	on s.user_id = u.user_id
+join roles r
+	on r.role_id = u.role_id
+group by u.user_id, u.full_name, u.username
+order by total_sales_value desc;
+
+
+
+
+
+-- LEVEL4: ADVANCED [Goal: CTEs, window functions, subqueries, trend analysis, percentage contribution.]
+-- Qry1 - Revenue contribution by city (Shows total revenue generated by each city and its percentage share of total company revenue.)
+with city_revenue as (
+	select
+		c.city,
+        round(sum(s.total_amount), 2) as total_city_revenue
+	from sales s
+    join customers c
+		on s.customer_id = c.customer_id
+	group by c.city
+),
+overall_revenue as (
+	select round(sum(total_amount), 2) as company_revenue
+    from sales
+)
+select
+	cr.city,
+    cr.total_city_revenue,
+    round((cr.total_city_revenue / o.company_revenue) * 100, 2) as revenue_contribution_percent
+from city_revenue cr
+cross join overall_revenue o
+order by cr.total_city_revenue desc;
+
+
+-- Qry2 - Top customers ranking using window function (Useful for loyalty strategy, VIP segmentation, and identifying high-value buyers)
+with customer_spend as (
+	select
+		c.customer_id,
+        c.full_name,
+        c.city,
+        round(sum(s.total_amount),2) as total_spent
+	from sales s
+    join customers c
+		on s.customer_id = c.customer_id
+	group by c.customer_id, c.full_name, c.city
+)
+select
+	customer_id,
+    full_name,
+    city,
+    total_spent,
+    rank() over (order by total_spent desc) as customer_rank
+from customer_spend
+order by customer_rank;
+
+
+-- Qry3 - Monthly sales trend with running revenue (Help Track business growth and momentum across months.)
+with monthly_sales as (
+	select
+		year(sale_date) as sales_year,
+        month(sale_date) as sales_month,
+        round(sum(total_amount), 2) as monthly_revenue
+	from sales
+    group by year(sale_date), month(sale_date)
+)
+select
+	sales_year,
+    sales_month,
+    monthly_revenue,
+    round(sum(monthly_revenue) over (order by sales_year, sales_month), 2) as running_revenue
+from monthly_sales
+order by sales_year, sales_month;
+
+
+-- Qry4 - Product revenue ranking inside each category (shows best performers per category instead of only globally)
+with product_category_sales as (
+	select
+		c.gender,
+		c.type,
+		c.subtype,
+		p.product_id,
+		p.product_name,
+		p.sku,
+		round(sum(s.total_amount), 2) as product_revenue
+	from sales s
+    join products p
+		on s.product_id = p.product_id
+	join categories c
+		on p.category_id = c.category_id
+	group by c.gender, c.type, c.subtype, p.product_id, p.product_name, p.sku
+)
+select
+	gender,
+    type,
+    subtype,
+    product_id,
+    product_name,
+    sku,
+    product_revenue,
+    rank() over (partition by gender, type, subtype order by product_revenue desc) AS category_rank
+from product_category_sales
+order by gender, type, subtype, category_rank;
+
+
+-- Qry5 - Month growth in revenue (shows whether revenue is increasing or declining over time)
+-- Tried Multible with Temprory Tables for best practice
+with monthly_sales_tem_T1 as (
+	select
+		year(sale_date) as sales_year,
+        month(sale_date) as sales_month,
+        round(sum(total_amount), 2) as monthly_revenue
+	from sales
+    group by year(sale_date), month(sale_date)
+),
+monthly_with_previous_tem_T2 as (
+	select
+		sales_year,
+        sales_month,
+        monthly_revenue,
+        lag(monthly_revenue) over (order by sales_year, sales_month) as previous_month_revenue
+	from monthly_sales_tem_T1
+),
+ monthly_with_revenue_diff_tem_T3 as (
+	select
+		sales_year,
+        sales_month,
+        monthly_revenue,
+        previous_month_revenue,
+        round(monthly_revenue - previous_month_revenue,2) as revenue_difference
+	from monthly_with_previous_tem_T2
+)
+select
+	sales_year,
+    sales_month,
+    monthly_revenue,
+    previous_month_revenue,
+    revenue_difference
+from monthly_with_revenue_diff_tem_T3
+order by sales_year, sales_month;
+
+
+-- Qry6 - Revenue Share by payment method (useful for payment preference analysis and checkout optimization.)
+with payment_revenue as (
+	select
+		payment_method,
+        round(sum(total_amount), 2) as total_payment_revenue
+	from sales
+    group by payment_method
+),
+overall_revenue as (
+	select
+		round(sum(total_amount), 2) as company_revenue
+	from sales
+)
+select
+	pr.payment_method,
+    pr.total_payment_revenue,
+    round((pr.total_payment_revenue / o.company_revenue) * 100, 2) as revenue_percent
+from payment_revenue pr
+cross join overall_revenue o
+order by pr.total_payment_revenue desc;
+
+
+-- Qry7 - Stock VS sales efficiency by product (Helps identify fast moves, slow movers, and stock imbalance.)
+with product_sales as (
+	select
+		p.product_id,
+        p.product_name,
+        p.sku,
+        p.stock_quantity,
+        coalesce(sum(s.quantity_sold), 0) as total_units_sold
+        from products p
+        left join sales s
+			on p.product_id = s.product_id
+		group by p.product_id, p.product_name, p.sku, p.stock_quantity
+)
+select
+	product_id,
+    product_name,
+    sku,
+    stock_quantity,
+    total_units_sold,
+    round(
+		case
+			when stock_quantity = 0 then null
+            else total_units_sold / stock_quantity
+		end,
+        2
+	) as sales_to_stock_ratio
+from product_sales
+order by sales_to_stock_ratio desc, total_units_sold desc;
+
+
+-- Qry8 - Top city by month (greate for location trend analysis and regional performancee tracking.)
+with city_month_sales as (
+	select
+		year(s.sale_date) as sales_year,
+        month(s.sale_date) as sales_month,
+        c.city,
+        round(sum(s.total_amount), 2) as city_revenue
+	from sales s
+    join customers c
+		on s.customer_id = c.customer_id
+	group by year(s.sale_date),month(s.sale_date), c.city
+),
+ranked_city_sales as (
+	select
+		sales_year,
+        sales_month,
+        city,
+        city_revenue,
+        rank() over (
+			partition by sales_year, sales_month 
+            order by city_revenue desc
+        ) as city_rank
+	from city_month_sales
+)
+select
+	sales_year,
+    sales_month,
+    city,
+    city_revenue
+from ranked_city_sales
+where city_rank = 1
+order by sales_year, sales_month;
+
+
+
+
+
+-- LEVEL5: EXPERT [Goal: Nested Subqueries, Correlated subqueries, complex joins (multi-level), business KPIs, .....]
+-- Qry1 - Customer segmentation by spending (Useful for target marketing and customer retention strategy.)
+with customer_spend as (
+	select
+		c.customer_id,
+        c.full_name,
+        c.city,
+        round(sum(s.total_amount), 2) as total_spent
+	from sales s
+    join customers c
+		on s.customer_id = c.customer_id
+	group by c.customer_id, c.full_name, c.city
+)
+select
+	customer_id,
+    full_name,
+    city,
+    total_spent,
+    case
+		when total_spent >= 300 then 'High Spender'
+        when total_spent >= 150 then 'Mdium Spender'
+        else 'Low Spender'
+	end as customer_segment
+from customer_spend
+order by total_spent desc;
+
+
+-- Qry2 - Repeat vs one-time customers (Help measure retention and customer loyalty.)
+with customer_orders as (
+	select
+		customer_id,
+        count(*) as transaction_count
+	from sales
+    group by customer_id
+)
+select
+	case
+		when transaction_count = 1 then 'One-Time Customer'
+        else 'Repeate Customer'
+	end as customer_type,
+    count(*) as total_customers
+from customer_orders
+group by
+	case
+		when transaction_count = 1 then 'One-Time Customer'
+        else 'Repeate Customer'
+	end;
+
+
+-- Qry3 - Products performing above average revenue (useful for identifying strong products worth promoting)
+with product_revenue as (
+	select
+		p.product_id,
+        p.product_name,
+        p.sku,
+        round(sum(s.total_amount), 2) as total_revenue
+	from sales s
+    join products p
+		on s.product_id = p.product_id
+	group by p.product_id, p.product_name, p.sku
+)
+select
+	product_id,
+    product_name,
+    sku,
+    total_revenue
+from product_revenue
+where total_revenue > (
+	select avg(total_revenue)
+    from product_revenue
+)
+order by total_revenue desc;
+
+
+-- Qry4 - Suppliers performance by revenue(useful for vendor evaluation and sourcing strategy)
+select
+	sp.supplier_id,
+    sp.supplier_name,
+    count(distinct p.product_id) as total_products,
+    round(sum(s.total_amount), 2) as supplier_revenue
+from sales s
+join products p
+	on s.product_id = p.product_id
+join suppliers sp
+	on p.supplier_id = sp.supplier_id
+group by sp.supplier_id, sp.supplier_name
+order by supplier_revenue desc;
+
+
+-- Qry5 - Best-selling products in each city(shows local buying behavior and city-level product perference)
+with city_product_sales as (
+	select
+		c.city,
+        p.product_id,
+        p.product_name,
+        p.sku,
+        round(sum(s.total_amount), 2) as product_revenue
+	from sales s
+    join customers c
+		on s.customer_id = c.customer_id
+	join products p
+		on s.product_id = p.product_id
+	group by c.city, p.product_id, p.product_name, p.sku
+),
+ranked_city_product as (
+	select
+		city,
+        product_id,
+        product_name,
+        sku,
+        product_revenue,
+        rank() over ( partition by city order by product_revenue desc) as city_product_rank
+	from city_product_sales
+)
+select
+	city,
+	product_id,
+	product_name,
+	sku,
+	product_revenue
+from ranked_city_product
+where city_product_rank = 1
+order by city, product_revenue desc;
+
+
+-- Qry6 - Customer last purchase and recency (very useful for retention analysis and re-engagement campaigns.)
+select
+	c.customer_id,
+    c.full_name,
+    c.city,
+    count(s.sales_id) as total_transactions,
+    max(s.sale_date) as last_purchase_date,
+    datediff(curdate(), date(max(s.sale_date))) as days_since_last_purchase
+from customers c
+left join sales s
+	on c.customer_id = s.customer_id
+group by c.customer_id, c.full_name, c.city
+order by days_since_last_purchase asc, total_transactions desc;
+
+
+
+
+
+-- LEVEL6: ENGINEERING [Goal: Views, Stored procedures, triggers, indexing, reusable reporting logic, automation-style SQL.]
+-- Qry1 - Monthly sales summary pipeline query (Produces a report-ready monthly summary for analytics/dashboard usage.)
+select
+	year(sale_date) as sales_year,
+    month(sale_date) as sales_month,
+    count(*) as total_transactions,
+    sum(quantity_sold) as total_units_sold,
+    round(sum(total_amount), 2) as total_revenue,
+    round(avg(total_amount), 2) as avg_transaction_value
+from sales
+group by year(sale_date), month(sale_date)
+order by sales_year, sales_month;
+
+
+-- Qry2 - Inventory risk monitoring query (Instead of just showing stock, it converts stock into a business action signal.)
+select
+	p.product_id,
+    p.product_name,
+    p.sku,
+    p.stock_quantity,
+    p.unit_price,
+    case
+		when p.stock_quantity = 0 then 'Out of Stock'
+        when p.stock_quantity <= 10 then 'Low Stock'
+        else 'Healthy Stock'
+	end as stock_status,
+    round(p.stock_quantity * p.unit_price, 2) as inventroy_value
+from products p
+order by 
+	case
+		when p.stock_quantity = 0 then 'Out of Stock'
+        when p.stock_quantity <= 10 then 'Low Stock'
+        else 'Healthy Stock'
+	end desc;
+
+
+-- Qry3 - Product Performance monitoring query (This one is a basic backend/business monitoring query.)
+select
+	p.product_id,
+    p.product_name,
+    p.sku,
+    p.stock_quantity,
+    p.unit_price,
+    coalesce(sum(s.quantity_sold), 0) as total_units_sold,
+    round(coalesce(sum(s.total_amount), 0), 2) as total_revenue,
+    case
+		when coalesce(sum(s.quantity_sold), 0) = 0 then 'No Sales Yet'
+        when coalesce(sum(s.quantity_sold), 0) >= 10 and p.stock_quantity <= 10 then 'Fast Moving - Reorder Soon'
+        when coalesce(sum(s.quantity_sold), 0) < 5 and p.stock_quantity > 7 then 'Slow Moving'
+        else 'Normal'
+	end as performance_status
+from products p
+left join sales s
+	on p.product_id = s.product_id
+group by p.product_id, p.product_name, p.sku, p.stock_quantity
+order by total_revenue desc, total_units_sold desc;
+
+
+-- Qry4 - Sales Detailed View (Instead of writing joins again & again, backend/reporting tools can just query the view.)
+create view sales_detailed_view as 
+select
+	s.sales_id,
+    s.sale_date,
+    s.customer_id,
+    c.full_name AS customer_name,
+    c.city,
+    c.country,
+    s.product_id,
+    p.product_name,
+    p.sku,
+    p.color,
+    p.size,
+    s.user_id,
+    u.full_name AS handled_by,
+    s.quantity_sold,
+    s.unit_price,
+    s.total_amount,
+    s.payment_method
+from sales s
+join customers c
+	on s.customer_id = c.customer_id
+join products p
+	on s.product_id = p.product_id
+join users u
+	on s.user_id = u.user_id;
+-- Usage Example
+select * 
+from sales_detailed_view
+order by sale_date desc;
+
+
+-- Qry5 - Inventory Summary View (Good for management reporting and powerBI imports)
+create view inventory_summary_view as
+select
+	p.product_id,
+    p.product_name,
+    p.sku,
+    c.gender,
+    c.type,
+    c.subtype,
+    sp.supplier_name,
+    p.size,
+    p.color,
+    p.stock_quantity,
+    p.unit_price,
+    round(p.stock_quantity * p.unit_price, 2) as inventory_value,
+    case
+		when p.stock_quantity = 0 then 'Out of Stock'
+        when p.stock_quantity <= 5 then 'Low Stock'
+        else 'Healthy Stock'
+	end as Stock_Status
+from products p
+join categories c
+	on p.category_id = c.category_id
+join suppliers sp
+	on p.supplier_id = sp.supplier_id;
+-- example usage
+select *
+from inventory_summary_view
+order by inventory_value desc;
+-- to drop view if u already made it before
+drop view if exists inventory_summary_view;
+
+
+-- Qry6 - Get Monthly Sales Report (Instead of rewriting the query everytim, app or analust can call a procedure)
+delimiter $$
+create procedure GetMonthlySalesReport(in input_year int)
+begin
+	select
+		year(sale_date) as sales_year,
+        month(sale_date) as sales_month,
+        count(*) as total_transactions,
+        sum(quantity_sold) as total_units_sold,
+        round(sum(total_amount), 2) as total_revenue,
+        round(avg(total_amount), 2) as avg_transaction_value
+	from sales
+    where year(sale_date) = input_year
+    group by year(sale_date), month(sale_date)
+    order by sales_month;
+end $$
+delimiter ;
+-- usage eg:
+call GetMonthlySalesReport(2026);
+
+
+-- Qry7 - Get Customer Purchase History (Useful for CRM-style lookup, customer service, and account history)
+delimiter $$
+create procedure GetCustomerPurchaseHistory(in input_customer_id int)
+begin
+	select
+		s.sales_id,
+        s.sale_date,
+        s.quantity_sold,
+        s.unit_price,
+        s.total_amount,
+        s.payment_method,
+        p.product_name,
+        p.sku,
+        p.color,
+        p.size,
+        c.full_name
+	from sales s
+    join products p
+		on s.product_id = p.product_id
+	join customers c
+		on s.customer_id = c.customer_id
+    where s.customer_id = input_customer_id
+    order by s.sale_date desc;
+end $$
+delimiter ;
+-- usage eg:
+call GetCustomerPurchaseHistory(83);
+-- to drop procedure if u already made it before
+drop procedure if exists GetCustomerPurchaseHistory;
+
+
+-- Qry8 - Auto Reduce Stock After Sale (It keeps inventory consistent without manual update query every time.)
+delimiter $$
+create trigger trg_reduce_stock_after_sale
+after insert on sales
+for each row
+begin
+	update products
+    set stock_quantity = stock_quantity - new.quantity_sold
+    where product_id = new.product_id;
+end $$
+delimiter ;
+drop trigger if exists trg_reduce_stock_after_sale;
+-- testing trigger working
+select product_id, stock_quantity
+from products
+where product_id = 1;
+-- now as i have checked stock for this product we will insert some stock in it
+insert into sales
+(product_id, customer_id, user_id, quantity_sold, unit_price, total_amount, sale_date, payment_method)
+values
+(1, 1, 2, 3, 79.99, 79.99, NOW(), 'Credit Card');
+-- now ill check again if that stock changese or not
+select product_id, stock_quantity
+from products
+where product_id = 1;
+-- IT WORKED
+
+
+-- THIS IS THE END OF ALL LEVELS OF MYSQL QUERIES FOR GARMENTIQ ANALYSIS

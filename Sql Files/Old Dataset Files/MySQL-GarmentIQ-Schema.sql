@@ -68,7 +68,7 @@ CREATE TABLE orders (
     FOREIGN KEY (customer_id) REFERENCES customers(customer_id),
     FOREIGN KEY (user_id) REFERENCES users(user_id)
 );
-x
+
 CREATE TABLE sales (
     sales_id INT AUTO_INCREMENT PRIMARY KEY,
     product_id INT,
