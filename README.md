@@ -32,8 +32,7 @@ GarmentIQ bridges the gap between **operational systems** and **analytics platfo
 ---
 
 ## Status
-- Requirements Gathering - Completed
-- Project Proposal - Completed
-- Weekly Progress Report(1) - Completed
+- Working With BI & Answering Leading Business Questions with data-driven insights
+- Advanced Power BI Analysis
 
 ---
